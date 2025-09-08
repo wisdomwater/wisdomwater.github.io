@@ -1,0 +1,3 @@
+[submodule "external/pistis-sophia"]
+	path = external/pistis-sophia
+	url = https://github.com/wisdomwater/pistis-sophia
