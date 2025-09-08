@@ -31,6 +31,14 @@ jobs:
       - name: Build site
         run: mkdocs build --strict
 
+      # Normalize 404 location just in case
+      - name: Normalize 404.html
+        run: |
+          if [ -f site/404/index.html ]; then
+            mv site/404/index.html site/404.html
+            rmdir site/404 || true
+          fi
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
