@@ -35,6 +35,7 @@ jobs:
       - name: Normalize 404.html
         run: |
           if [ -f site/404/index.html ]; then
+            echo "Moving site/404/index.html to site/404.html"
             mv site/404/index.html site/404.html
             rmdir site/404 || true
           fi
