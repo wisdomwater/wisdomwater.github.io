@@ -78,4 +78,4 @@ Feel free to submit issues or pull requests to improve the automation or content
 
 ## License
 
-This repository is maintained by Michael Collins for the Wisdom Water project.
+This repository is maintained by Michael Collins for the Wisdom Water project. See the [LICENSE](LICENSE) for details.
