@@ -1,5 +1,5 @@
 site_name: "Wisdom Water"
-
+site_url: https://wisdomwater.github.io/
 theme:
   name: material
   features:

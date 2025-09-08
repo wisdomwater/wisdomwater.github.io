@@ -2,13 +2,13 @@
 
 Read online or download the PDF.
 
-[Download PDF](downloads/pistis-sophia.pdf){ .md-button }
+[Download PDF](https://github.com/wisdomwater/pistis-sophia/releases/download/latest/pistis-sophia.pdf){ .md-button }
 
-[Download EPUB](downloads/pistis-sophia.epub){ .md-button }
+[Download EPUB](https://github.com/wisdomwater/pistis-sophia/releases/download/latest/pistis-sophia.epub){ .md-button }
 
-[Download Markdown](downloads/pistis-sophia.md){ .md-button }
+[Download Markdown](https://github.com/wisdomwater/pistis-sophia/releases/download/latest/pistis-sophia.md){ .md-button }
 
-![cover](downloads/cover.png)
+![cover](https://github.com/wisdomwater/pistis-sophia/releases/download/latest/cover.png)
 
 ---
 
