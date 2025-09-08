@@ -2,6 +2,7 @@ site_name: "Wisdom Water"
 site_url: https://wisdomwater.github.io/
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.top
     - toc.integrate
