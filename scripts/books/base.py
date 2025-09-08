@@ -1,6 +1,7 @@
 import os
 import sys
 from textwrap import dedent
+import time
 
 class BaseBook:
     pagebreak_lua = os.path.join("scripts", "pagebreak.lua")
@@ -121,3 +122,56 @@ class BaseBook:
             os.system(f'copy /y "{cover_image}" "{dest_cover_image}"')
 
         print(f"Copied downloads to {self.downloads_dir}")
+
+    def publish(self):
+        print(f"Publishing {self.name}")
+        
+        assets = [
+            self.book_pdf,
+            self.book_epub,
+            self.book_md,
+            self.get_cover_image(),
+        ]
+
+        # Make sure all assets exist
+        for asset in assets:
+            if not os.path.exists(asset):
+                print(f"Missing asset: {asset}")
+                sys.exit(1)
+
+        # Make sure GitHub CLI is authenticated
+        exit_code = os.system("gh auth status -h github.com >NUL")
+        if exit_code != 0:
+            print("GitHub CLI not authenticated. Run 'gh auth login'")
+            sys.exit(1)
+        
+        tag = "v" + time.strftime("%Y.%m.%d")
+        repo = self.name
+
+        # Check if release already exists
+        release_exists = os.system(f'gh release view {tag} -R wisdomwater/{repo} >NUL 2>&1') == 0
+        if not release_exists:
+            print(f"Creating release {tag}")
+            exit_code = os.system(f'gh release create {tag} -R wisdomwater/{repo} -t "{self.name} {tag}" -n "Automated release of {self.name}."')
+            if exit_code != 0:
+                print("Failed to create release")
+                sys.exit(1)
+        else:
+            print(f"Release {tag} already exists, updating assets")
+
+        # Upload assets to tagged release
+        asset_list = " ".join(f'"{asset}"' for asset in assets)
+        print(f"Uploading assets to release {tag}")
+        exit_code = os.system(f'gh release upload {tag} {asset_list} -R wisdomwater/{repo} --clobber')
+        if exit_code != 0:
+            print(f"Failed to upload assets")
+            sys.exit(1)
+        
+        # Upload assets to latest release
+        print(f"Uploading assets to latest release")
+        exit_code = os.system(f'gh release upload latest {asset_list} -R wisdomwater/{repo} --clobber')
+        if exit_code != 0:
+            print(f"Failed to upload assets to latest release")
+            sys.exit(1)
+
+        print("Published successfully")

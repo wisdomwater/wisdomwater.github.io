@@ -26,17 +26,37 @@ def compile(book, pdf, epub):
         pdf = True
         epub = True
 
-    compiler = BOOKS.get(book)()
-    if not compiler:
+    booker = BOOKS.get(book)()
+    if not booker:
         print(f"Unknown book: {book}")
         sys.exit(1)
 
-    compiler.create_md()
+    booker.create_md()
     if epub:
-        compiler.create_epub()
+        booker.create_epub()
     if pdf:
-        compiler.create_pdf()
-    compiler.copy_downloads()
+        booker.create_pdf()
+    booker.copy_downloads()
+
+
+@cli.command(short_help="Publish book assets")
+@click.argument("book")
+@click.option("--no-compile", is_flag=True, help="Do not compile first")
+def publish(book, no_compile):
+    """
+    Publish book assets
+    """
+    if not no_compile:
+        exit_code = os.system(f"do compile {book}")
+        if exit_code != 0:
+            print("Failed to compile")
+            sys.exit(1)
+    
+    booker = BOOKS.get(book)()
+    if not booker:
+        print(f"Unknown book: {book}")
+        sys.exit(1)
+    booker.publish()
 
 
 def pistis_sophia():
