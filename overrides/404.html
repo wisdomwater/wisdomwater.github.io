@@ -1,8 +1,72 @@
-{% extends "main.html" %}
-{% block title %}Page not found - {{ config.site_name }}{% endblock %}
-
-{% block content %}
-  <section class="md-typeset">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 - Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background: #f9f9fb;
+      color: #22223b;
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      max-width: 480px;
+      padding: 2.5rem 2rem 2rem 2rem;
+      margin: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5em;
+      color: #3a3a5a;
+    }
+    ul {
+      text-align: left;
+      margin: 1.5em auto 1.5em auto;
+      padding-left: 1.2em;
+      max-width: 400px;
+      color: #444;
+    }
+    li {
+      margin-bottom: 0.7em;
+    }
+    a.home-link {
+      display: inline-block;
+      margin-top: 1.5em;
+      padding: 0.7em 1.5em;
+      background: #4f46e5;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    a.home-link:hover {
+      background: #3730a3;
+    }
+    hr {
+      margin: 2em 0 1.5em 0;
+      border: none;
+      border-top: 1px solid #eee;
+    }
+    em {
+      color: #6c63a3;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
     <h1>404 - Page Not Found</h1>
     <p>Ah, seeker... you’ve stumbled into the void.</p>
 
@@ -17,12 +81,8 @@
 
     <p>Return now, traveler, and sip again from the waters of wisdom.</p>
 
-    <p>
-      <a class="md-button md-button--primary" href="{{ base_url }}/">Go home</a>
-      <a class="md-button" href="{{ base_url }}/search/">Search the site</a>
-    </p>
+    <a class="home-link" href="/">Go home</a>
 
     <hr />
     <p><em>“The way is not in the sky. The way is in the heart.”</em></p>
-  </section>
-{% endblock %}
+  </div>
