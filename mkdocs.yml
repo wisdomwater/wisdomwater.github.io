@@ -1,0 +1,26 @@
+site_name: "Wisdom Water"
+
+theme:
+  name: material
+  features:
+    - navigation.top
+    - toc.integrate
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+      toc_depth: 3
+      baselevel: 2
+  - pymdownx.snippets:
+      base_path:
+        - .   # allow includes from repo root (so "external/..." works)
+
+nav:
+  - Home: index.md
+  - Books:
+    - "Pistis Sophia": pistis-sophia/index.md

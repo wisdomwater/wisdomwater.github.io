@@ -1,0 +1,4 @@
+click
+mkdocs-material
+pandoc
+pymdown-extensions
