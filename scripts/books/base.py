@@ -166,7 +166,19 @@ class BaseBook:
         if exit_code != 0:
             print(f"Failed to upload assets")
             sys.exit(1)
-        
+
+        # Check if latest tag already exists
+        tag = "latest"
+        release_exists = os.system(f'gh release view {tag} -R wisdomwater/{repo} >NUL 2>&1') == 0
+        if not release_exists:
+            print(f"Creating release {tag}")
+            exit_code = os.system(f'gh release create {tag} -R wisdomwater/{repo} -t "{self.name} {tag}" -n "Automated release of {self.name}."')
+            if exit_code != 0:
+                print("Failed to create release")
+                sys.exit(1)
+        else:
+            print(f"Release {tag} already exists, updating assets")
+
         # Upload assets to latest release
         print(f"Uploading assets to latest release")
         exit_code = os.system(f'gh release upload latest {asset_list} -R wisdomwater/{repo} --clobber')

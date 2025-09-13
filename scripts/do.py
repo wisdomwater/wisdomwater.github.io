@@ -64,8 +64,14 @@ def pistis_sophia():
     return PistisSophia()
 
 
+def the_way_of_the_pilgrim():
+    from books.the_way_of_the_pilgrim import TheWayOfThePilgrim
+    return TheWayOfThePilgrim()
+
+
 BOOKS = {
     "pistis-sophia": pistis_sophia,
+    "the-way-of-the-pilgrim": the_way_of_the_pilgrim,
 }
 
 if __name__ == "__main__":

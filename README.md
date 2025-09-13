@@ -72,6 +72,19 @@ This repository contains the automation scripts and layout for the **Wisdom Wate
 6. **Create meta.yaml:**
    Copy and edit existing `external/<book>/meta.yaml` file.
 
+7. **Compile the book:**
+   ```
+   do compile <book>
+   ```
+
+8. **Publish the book artifacts:**
+   ```
+   do publish <book>
+   ```
+
+9. **Merge main site changes:**
+   Git push all the changes. This will trigger a rebuilding of the Git Pages site.
+
 ## Contributing
 
 Feel free to submit issues or pull requests to improve the automation or content structure.
