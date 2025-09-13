@@ -4,3 +4,6 @@
 [submodule "external/the-way-of-the-pilgrim"]
 	path = external/the-way-of-the-pilgrim
 	url = https://github.com/wisdomwater/the-way-of-the-pilgrim
+[submodule "external/the-journey-home"]
+	path = external/the-journey-home
+	url = https://github.com/wisdomwater/the-journey-home

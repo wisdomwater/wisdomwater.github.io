@@ -11,3 +11,4 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 ## Books
 
 - [Pistis Sophia](pistis-sophia/index.md)
+- [The Way of the Pilgrim](the-way-of-the-pilgrim/index.md)

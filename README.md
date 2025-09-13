@@ -63,27 +63,36 @@ This repository contains the automation scripts and layout for the **Wisdom Wate
 3. **Update docs/index:**
    Add a new entry for the book in `docs/index.md`.
 
-4. **Create book script:**
+4. **Update nav:**
+   Add a new entry for the book to `mkdocs.yml`.
+
+5. **Create book script:**
    Follow the example of an existing file and create a new `scripts/book/<repo-name>.py` file.
 
-5. **Update scripts/do.py:**
+6. **Update scripts/do.py:**
    Add a new entry to `BOOK` dictionary in `scripts/do.py`.
 
-6. **Create meta.yaml:**
+7. **Create meta.yaml:**
    Copy and edit existing `external/<book>/meta.yaml` file.
 
-7. **Compile the book:**
+
+8. **Compile the book:**
    ```
    do compile <book>
    ```
 
-8. **Publish the book artifacts:**
+9. **Publish the book artifacts:**
    ```
    do publish <book>
    ```
 
-9. **Merge main site changes:**
+10. **Merge main site changes:**
    Git push all the changes. This will trigger a rebuilding of the Git Pages site.
+
+11. **Serve http://localhost:8000**
+   ```
+   do -- mkdocs serve
+   ```
 
 ## Contributing
 
