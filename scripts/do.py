@@ -64,6 +64,11 @@ def pistis_sophia():
     return PistisSophia()
 
 
+def the_greater_mercy():
+    from books.the_greater_mercy import TheGreaterMercy
+    return TheGreaterMercy()
+
+
 def the_journey_home():
     from books.the_journey_home import TheJourneyHome
     return TheJourneyHome()
@@ -76,6 +81,7 @@ def the_way_of_the_pilgrim():
 
 BOOKS = {
     "pistis-sophia": pistis_sophia,
+    "the-greater-mercy": the_greater_mercy,
     "the-journey-home": the_journey_home,
     "the-way-of-the-pilgrim": the_way_of_the_pilgrim,
 }
