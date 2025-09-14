@@ -1,4 +1,4 @@
-# Pistis Sophia
+# The Way of the Pilgrim
 
 Read online or download the PDF.
 

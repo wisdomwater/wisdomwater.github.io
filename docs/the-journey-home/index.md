@@ -1,4 +1,4 @@
-# Pistis Sophia
+# The Journey Home
 
 Read online or download the PDF.
 

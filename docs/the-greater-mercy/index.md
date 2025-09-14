@@ -1,4 +1,4 @@
-# Pistis Sophia
+# The Greater Mercy
 
 Read online or download the PDF.
 
