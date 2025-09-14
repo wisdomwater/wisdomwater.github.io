@@ -7,3 +7,6 @@
 [submodule "external/the-journey-home"]
 	path = external/the-journey-home
 	url = https://github.com/wisdomwater/the-journey-home
+[submodule "external/the-greater-mercy"]
+	path = external/the-greater-mercy
+	url = https://github.com/wisdomwater/the-greater-mercy
