@@ -6,6 +6,8 @@ Read online or download the PDF.
 
 [Download EPUB](https://github.com/wisdomwater/pistis-sophia/releases/download/latest/pistis-sophia.epub){ .md-button }
 
+[Download DOCX](https://github.com/wisdomwater/pistis-sophia/releases/download/latest/pistis-sophia.docx){ .md-button }
+
 [Download Markdown](https://github.com/wisdomwater/pistis-sophia/releases/download/latest/pistis-sophia.md){ .md-button }
 
 ![cover](https://github.com/wisdomwater/pistis-sophia/releases/download/latest/cover.png)

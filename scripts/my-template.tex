@@ -28,6 +28,14 @@
 \usepackage{microtype}
 \usepackage{csquotes}
 
+% Improve hyphenation and reduce overfull lines
+\righthyphenmin=2
+\lefthyphenmin=2
+% allow some extra flexibility in line-breaking to avoid margin overflow
+\emergencystretch=3em
+\tolerance=1000
+\hfuzz=1pt
+
 % --- Geometry ---
 \usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
 
@@ -58,6 +66,8 @@
 $if(linestretch)$\linespread{$linestretch$}$endif$
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
+% Allow TeX to be a bit more permissive with spacing to avoid overfull boxes
+\sloppy
 
 % --- Headers/Footers ---
 \usepackage{fancyhdr}

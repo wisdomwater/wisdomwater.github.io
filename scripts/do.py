@@ -16,15 +16,19 @@ def cli():
 @cli.command(short_help="Compile into output files")
 @click.argument("book")
 @click.option("-p", "--pdf", is_flag=True, help="Generate PDF")
+@click.option("-b", "--paperback", is_flag=True, help="Generate Paperback PDF")
 @click.option("-e", "--epub", is_flag=True, help="Generate ePub")
-def compile(book, pdf, epub):
+@click.option("-d", "--docx", is_flag=True, help="Generate DOCX")
+def compile(book, paperback, pdf, epub, docx):
     """
     Compile into output file formats
     """
     # If neither is specified, do both
-    if not pdf and not epub:
+    if not pdf and not paperback and not epub and not docx:
         pdf = True
+        paperback = True
         epub = True
+        docx = True
 
     booker = BOOKS.get(book)()
     if not booker:
@@ -36,6 +40,10 @@ def compile(book, pdf, epub):
         booker.create_epub()
     if pdf:
         booker.create_pdf()
+    if paperback:
+        booker.create_paperback_pdf()
+    if docx:
+        booker.create_docx()
     booker.copy_downloads()
 
 
