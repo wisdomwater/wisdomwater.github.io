@@ -24,7 +24,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Books:
-    - "Pistis Sophia": pistis-sophia/index.md
+    # KDP_SELECT - "Pistis Sophia": pistis-sophia/index.md
     - "The Greater Mercy": the-greater-mercy/index.md
     - "The Journey Home": the-journey-home/index.md
     - "The Way of the Pilgrim": the-way-of-the-pilgrim/index.md
