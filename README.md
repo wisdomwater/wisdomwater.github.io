@@ -75,7 +75,6 @@ This repository contains the automation scripts and layout for the **Wisdom Wate
 7. **Create meta.yaml:**
    Copy and edit existing `external/<book>/meta.yaml` file.
 
-
 8. **Compile the book:**
    ```
    do compile <book>
@@ -93,6 +92,17 @@ This repository contains the automation scripts and layout for the **Wisdom Wate
    ```
    do -- mkdocs serve
    ```
+
+## Disabling content
+
+1. **Update mkdocs.yml**
+   Comment out the entry in the nav section.
+
+2. **Update docs/index.md**
+   Comment out the entry in under the Books header.
+
+3. **Move docs/<book>/index.md**
+   Move the `doc/<book>/index.md` file to `hidden/<book>/index.md`.
 
 ## Contributing
 
