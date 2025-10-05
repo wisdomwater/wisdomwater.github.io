@@ -10,3 +10,6 @@
 [submodule "external/the-greater-mercy"]
 	path = external/the-greater-mercy
 	url = https://github.com/wisdomwater/the-greater-mercy
+[submodule "external/the-god-who-sees"]
+	path = external/the-god-who-sees
+	url = https://github.com/wisdomwater/the-god-who-sees

@@ -1,7 +1,5 @@
 import os
 import re
-import sys
-import time
 
 from .base import BaseBook
 
