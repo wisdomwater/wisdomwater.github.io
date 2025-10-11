@@ -14,7 +14,7 @@ Read online or download the PDF.
 
 ---
 
---8<-- "external/the-greater-mercy/foreword.md"
+--8<-- "external/the-greater-mercy/preface.md"
 
 ---
 
