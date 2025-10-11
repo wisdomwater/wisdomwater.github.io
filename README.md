@@ -110,7 +110,7 @@ This repository contains the automation scripts and layout for the **Wisdom Wate
 5. **Remove git submodule from repo**
    ```
    git rm -f external/<repo-name>
-   git confit --remove-section submodule.external/<repo-name>
+   git config --remove-section submodule.external/<repo-name>
    rm -rf external/<repo-name>
    ```
 
