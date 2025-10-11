@@ -6,6 +6,8 @@ Read online or download the PDF.
 
 [Download EPUB](https://github.com/wisdomwater/the-greater-mercy/releases/download/latest/the-greater-mercy.epub){ .md-button }
 
+[Download DOCX](https://github.com/wisdomwater/the-greater-mercy/releases/download/latest/the-greater-mercy.docx){ .md-button }
+
 [Download Markdown](https://github.com/wisdomwater/the-greater-mercy/releases/download/latest/the-greater-mercy.md){ .md-button }
 
 ![cover](https://github.com/wisdomwater/the-greater-mercy/releases/download/latest/cover.png)
