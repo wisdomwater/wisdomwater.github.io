@@ -104,6 +104,16 @@ This repository contains the automation scripts and layout for the **Wisdom Wate
 3. **Move docs/<book>/index.md**
    Move the `doc/<book>/index.md` file to `hidden/<book>/index.md`.
 
+4. **Update .gitmodules**
+   Remove the submodule section from `.gitmodules`.
+
+5. **Remove git submodule from repo**
+   ```
+   git rm -f external/<repo-name>
+   git confit --remove-section submodule.external/<repo-name>
+   rm -rf external/<repo-name>
+   ```
+
 ## Contributing
 
 Feel free to submit issues or pull requests to improve the automation or content structure.
