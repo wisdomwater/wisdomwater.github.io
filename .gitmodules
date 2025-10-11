@@ -10,3 +10,6 @@
 [submodule "external/the-god-who-sees"]
 	path = external/the-god-who-sees
 	url = https://github.com/wisdomwater/the-god-who-sees
+[submodule "external/bardo-thodol"]
+	path = external/bardo-thodol
+	url = https://github.com/wisdomwater/bardo-thodol
