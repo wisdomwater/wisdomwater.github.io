@@ -1,7 +1,5 @@
 import os
-import re
 import sys
-import time
 
 import click
 
@@ -67,38 +65,51 @@ def publish(book, no_compile):
     booker.publish()
 
 
+BOOKS = {}
+
+
+def define_book(name):
+    def wrapper(func):
+        BOOKS[name] = func
+        return func
+    return wrapper
+
+
+@define_book("bardo-thodol")
+def bardo_thodol():
+    from books.bardo_thodol import BardoThodol
+    return BardoThodol()
+
+
+@define_book("pistis-sophia")
 def pistis_sophia():
     from books.pistis_sophia import PistisSophia
     return PistisSophia()
 
 
+@define_book("the-god-who-sees")
 def the_god_who_sees():
     from books.the_god_who_sees import TheGodWhoSees
     return TheGodWhoSees()
 
 
+@define_book("the-greater-mercy")
 def the_greater_mercy():
     from books.the_greater_mercy import TheGreaterMercy
     return TheGreaterMercy()
 
 
+@define_book("the-journey-home")
 def the_journey_home():
     from books.the_journey_home import TheJourneyHome
     return TheJourneyHome()
 
 
+@define_book("the-way-of-the-pilgrim")
 def the_way_of_the_pilgrim():
     from books.the_way_of_the_pilgrim import TheWayOfThePilgrim
     return TheWayOfThePilgrim()
 
-
-BOOKS = {
-    "pistis-sophia": pistis_sophia,
-    "the-god-who-sees": the_god_who_sees,
-    "the-greater-mercy": the_greater_mercy,
-    "the-journey-home": the_journey_home,
-    "the-way-of-the-pilgrim": the_way_of_the_pilgrim,
-}
 
 if __name__ == "__main__":
     cli(prog_name="do")
