@@ -13,3 +13,6 @@
 [submodule "external/bardo-thodol"]
 	path = external/bardo-thodol
 	url = https://github.com/wisdomwater/bardo-thodol
+[submodule "external/phaedo"]
+	path = external/phaedo
+	url = https://github.com/wisdomwater/phaedo

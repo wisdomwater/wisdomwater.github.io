@@ -81,6 +81,12 @@ def bardo_thodol():
     return BardoThodol()
 
 
+@define_book("phaedo")
+def phaedo():
+    from books.phaedo import Phaedo
+    return Phaedo()
+
+
 @define_book("pistis-sophia")
 def pistis_sophia():
     from books.pistis_sophia import PistisSophia

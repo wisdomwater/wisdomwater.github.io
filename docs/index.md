@@ -11,6 +11,7 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 ## Books
 
 <!-- KDP_SELECT - [Pistis Sophia](pistis-sophia/index.md) -->
+- [Phaedo](phaedo/index.md)
 - [The God Who Sees](the-god-who-sees/index.md)
 - [The Greater Mercy](the-greater-mercy/index.md)
 - [The Journey Home](the-journey-home/index.md)
