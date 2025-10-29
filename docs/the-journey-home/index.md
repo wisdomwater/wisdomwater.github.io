@@ -1,6 +1,6 @@
 # The Journey Home
 
-Read online or download the PDF.
+[Order on Amazon](https://a.co/d/4cwDSTX){ .md-button }
 
 [Download PDF](https://github.com/wisdomwater/the-journey-home/releases/download/latest/the-journey-home.pdf){ .md-button }
 
