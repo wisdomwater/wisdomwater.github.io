@@ -102,11 +102,21 @@ class BaseBook:
     def create_paperback_pdf(self):
         print(f"Creating {self.book_paperback_pdf}")
         os.makedirs(os.path.dirname(self.book_paperback_pdf), exist_ok=True)
+        metadata_file = self.create_paperback_metadata(self.metadata)
         exit_code = os.system(
-            f"pandoc {self.book_md} -o {self.book_paperback_pdf} --pdf-engine=xelatex --metadata-file={self.metadata} --metadata=toc:false --template={self.mytemplate_tex} --lua-filter={self.pagebreak_lua} --variable=paper-size:a5 --variable=margin-left:0.75in --variable=margin-right:0.75in --variable=margin-top:1in --variable=margin-bottom:1in"
+            f"pandoc {self.book_md} -o {self.book_paperback_pdf} --pdf-engine=xelatex --metadata-file={metadata_file} --metadata=toc:false --template={self.mytemplate_tex} --lua-filter={self.pagebreak_lua} --variable=paper-size:a5 --variable=margin-left:0.75in --variable=margin-right:0.75in --variable=margin-top:1in --variable=margin-bottom:1in"
         )
         if exit_code != 0:
             print("Failed to generate paperback pdf")
+        if os.path.exists(metadata_file):
+            os.remove(metadata_file)
+
+    def create_paperback_metadata(self, original_metadata):
+        paperback_metadata = original_metadata.replace(".yaml", "-paperback.yaml")
+        with open(original_metadata, "r", encoding="utf-8", errors="ignore") as f:
+            with open(paperback_metadata, "w", encoding="utf-8", errors="ignore") as fout:
+                fout.write(f.read().replace("oneside", "twoside"))
+        return paperback_metadata
 
     def get_cover_tex_content(self):
         cover_image = self.get_cover_image().replace("\\", "/")
