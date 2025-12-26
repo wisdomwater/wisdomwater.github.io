@@ -1,4 +1,4 @@
-# The Tibetan Book of the Dead
+# Phaedo
 
 Read online or download the PDF.
 

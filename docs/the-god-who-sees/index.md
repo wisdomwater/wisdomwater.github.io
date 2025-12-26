@@ -1,4 +1,4 @@
-# Pistis Sophia
+# The God Who Sees
 
 Read online or download the PDF.
 
