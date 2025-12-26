@@ -24,10 +24,16 @@ class BaseBook:
         raise NotImplementedError()
     
     def get_epub_markdown_content(self):
-        return ""
-    
+        content = self.get_md_content(format="epub")
+        return content
+
+    def get_copyright_md(self, format):
+        if format == "epub":
+            return os.path.join(self.base_dir, "copyright-epub.md")
+        return os.path.join(self.base_dir, "copyright.md")
+  
     def get_cover_image(self):
-        return ""
+        return os.path.join(self.base_dir, "artwork", "cover.png")
 
     def create_md(self):
         filename = self.book_md

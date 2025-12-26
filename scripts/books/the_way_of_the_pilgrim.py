@@ -10,17 +10,18 @@ class TheWayOfThePilgrim(BaseBook):
     def __init__(self):
         super().__init__("the-way-of-the-pilgrim")
 
-    def get_chapters(self):
+    def get_chapters(self, format):
         files = [
-            os.path.join(self.base_dir, "foreword.md"),
+            os.path.join(self.base_dir, "blank.md"),
+            self.get_copyright_md(format),
+            os.path.join(self.base_dir, "preface.md"),
         ]
         files.extend(self._get_chapters())
         return files
-
-    def get_cover_image(self):
-        return os.path.join(self.base_dir, "artwork", "cover.png")
     
     def _get_chapters(self):
         for file in sorted(os.listdir(self.chapters_dir)):
+            if not file.endswith(".md"):
+                continue
             filepath = os.path.join(self.chapters_dir, file)
             yield filepath

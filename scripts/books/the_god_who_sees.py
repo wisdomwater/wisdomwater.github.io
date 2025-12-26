@@ -21,14 +21,6 @@ class TheGodWhoSees(BaseBook):
         files.append(os.path.join(self.base_dir, "conclusion.md"))
         return files
 
-    def get_cover_image(self):
-        return os.path.join(self.base_dir, "artwork", "cover.png")
-    
-    def get_copyright_md(self, format):
-        if format == "epub":
-            return os.path.join(self.base_dir, "copyright-epub.md")
-        return os.path.join(self.base_dir, "copyright.md")
-
     def _get_chapters(self):
         for file in sorted(os.listdir(self.chapters_dir)):
             if not file.endswith(".md"):
