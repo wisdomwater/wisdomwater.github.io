@@ -99,6 +99,12 @@ def the_god_who_sees():
     return TheGodWhoSees()
 
 
+@define_book("the-first-light")
+def the_first_light():
+    from books.the_first_light import TheFirstLight
+    return TheFirstLight()
+
+
 @define_book("the-greater-mercy")
 def the_greater_mercy():
     from books.the_greater_mercy import TheGreaterMercy

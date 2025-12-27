@@ -24,6 +24,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Books:
+    - "Aurora": the-first-light/index.md
     # KDP_SELECT - "Pistis Sophia": pistis-sophia/index.md
     - "Phaedo": phaedo/index.md
     - "The God Who Sees": the-god-who-sees/index.md

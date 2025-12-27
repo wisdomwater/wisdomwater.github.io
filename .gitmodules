@@ -16,3 +16,6 @@
 [submodule "external/phaedo"]
 	path = external/phaedo
 	url = https://github.com/wisdomwater/phaedo
+[submodule "external/the-first-light"]
+	path = external/the-first-light
+	url = https://github.com/wisdomwater/the-first-light
