@@ -1,10 +1,12 @@
 # The Way of the Pilgrim
 
-Read online or download the PDF.
+[Order on Amazon](https://a.co/d/eT8BrOB){ .md-button }
 
 [Download PDF](https://github.com/wisdomwater/the-way-of-the-pilgrim/releases/download/latest/the-way-of-the-pilgrim.pdf){ .md-button }
 
 [Download EPUB](https://github.com/wisdomwater/the-way-of-the-pilgrim/releases/download/latest/the-way-of-the-pilgrim.epub){ .md-button }
+
+[Download DOCX](https://github.com/wisdomwater/the-way-of-the-pilgrim/releases/download/latest/the-way-of-the-pilgrim.docx){ .md-button }
 
 [Download Markdown](https://github.com/wisdomwater/the-way-of-the-pilgrim/releases/download/latest/the-way-of-the-pilgrim.md){ .md-button }
 

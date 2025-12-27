@@ -1,6 +1,6 @@
 # The God Who Sees
 
-Read online or download the PDF.
+[Order on Amazon](https://a.co/d/4PWKGI6){ .md-button }
 
 [Download PDF](https://github.com/wisdomwater/the-god-who-sees/releases/download/latest/the-god-who-sees.pdf){ .md-button }
 

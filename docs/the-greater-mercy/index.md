@@ -1,6 +1,6 @@
 # The Greater Mercy
 
-Read online or download the PDF.
+[Order on Amazon](https://a.co/d/9deLFtP){ .md-button }
 
 [Download PDF](https://github.com/wisdomwater/the-greater-mercy/releases/download/latest/the-greater-mercy.pdf){ .md-button }
 

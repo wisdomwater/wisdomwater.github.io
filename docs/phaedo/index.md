@@ -1,6 +1,6 @@
 # Phaedo
 
-Read online or download the PDF.
+[Order on Amazon](https://a.co/d/1bbUSRg){ .md-button }
 
 [Download PDF](https://github.com/wisdomwater/phaedo/releases/download/latest/phaedo.pdf){ .md-button }
 

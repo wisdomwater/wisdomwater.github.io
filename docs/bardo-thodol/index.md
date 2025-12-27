@@ -1,6 +1,6 @@
 # The Tibetan Book of the Dead
 
-Read online or download the PDF.
+[Order on Amazon](https://a.co/d/eBIlS6I){ .md-button }
 
 [Download PDF](https://github.com/wisdomwater/bardo-thodol/releases/download/latest/bardo-thodol.pdf){ .md-button }
 
