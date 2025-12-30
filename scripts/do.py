@@ -117,6 +117,12 @@ def the_journey_home():
     return TheJourneyHome()
 
 
+@define_book("the-spirits-book")
+def the_spirits_book():
+    from books.the_spirits_book import TheSpiritsBook
+    return TheSpiritsBook()
+
+
 @define_book("the-way-of-the-pilgrim")
 def the_way_of_the_pilgrim():
     from books.the_way_of_the_pilgrim import TheWayOfThePilgrim

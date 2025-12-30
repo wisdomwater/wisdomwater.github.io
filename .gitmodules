@@ -19,3 +19,6 @@
 [submodule "external/the-first-light"]
 	path = external/the-first-light
 	url = https://github.com/wisdomwater/the-first-light
+[submodule "external/the-spirits-book"]
+	path = external/the-spirits-book
+	url = https://github.com/wisdomwater/the-spirits-book
