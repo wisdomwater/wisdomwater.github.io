@@ -2,6 +2,7 @@
 
 [Order on Amazon](https://a.co/d/9deLFtP){ .md-button }
 
+<!--
 [Download PDF](https://github.com/wisdomwater/the-greater-mercy/releases/download/latest/the-greater-mercy.pdf){ .md-button }
 
 [Download EPUB](https://github.com/wisdomwater/the-greater-mercy/releases/download/latest/the-greater-mercy.epub){ .md-button }
@@ -10,8 +11,11 @@
 
 [Download Markdown](https://github.com/wisdomwater/the-greater-mercy/releases/download/latest/the-greater-mercy.md){ .md-button }
 
+-->
+
 ![cover](https://github.com/wisdomwater/the-greater-mercy/releases/download/latest/cover.png)
 
+<!--
 ---
 
 --8<-- "external/the-greater-mercy/introduction.md"
@@ -58,3 +62,5 @@
 --8<-- "external/the-greater-mercy/chapters/4.09.md"
 
 --8<-- "external/the-greater-mercy/chapters/5.01.md"
+
+-->

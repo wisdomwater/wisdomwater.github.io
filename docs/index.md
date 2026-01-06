@@ -10,11 +10,13 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 
 ## Books
 
-<!-- KDP_SELECT - [Pistis Sophia](pistis-sophia/index.md) -->
+- [Pistis Sophia](pistis-sophia/index.md)
 - [Aurora](the-first-light/index.md)
 - [Phaedo](phaedo/index.md)
+- [The Everlasting Gospel](the-everlasting-gospel/index.md)
 - [The God Who Sees](the-god-who-sees/index.md)
 - [The Greater Mercy](the-greater-mercy/index.md)
 - [The Journey Home](the-journey-home/index.md)
+- [The Spirits' Book](the-spirits-book/index.md)
 - [The Tibetan Book of the Dead](bardo-thodol/index.md)
 - [The Way of the Pilgrim](the-way-of-the-pilgrim/index.md)

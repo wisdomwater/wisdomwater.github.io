@@ -2,6 +2,7 @@
 
 [Order on Amazon](https://a.co/d/1bbUSRg){ .md-button }
 
+<!--
 [Download PDF](https://github.com/wisdomwater/phaedo/releases/download/latest/phaedo.pdf){ .md-button }
 
 [Download EPUB](https://github.com/wisdomwater/phaedo/releases/download/latest/phaedo.epub){ .md-button }
@@ -9,9 +10,11 @@
 [Download DOCX](https://github.com/wisdomwater/phaedo/releases/download/latest/phaedo.docx){ .md-button }
 
 [Download Markdown](https://github.com/wisdomwater/phaedo/releases/download/latest/phaedo.md){ .md-button }
+-->
 
 ![cover](https://github.com/wisdomwater/phaedo/releases/download/latest/cover.png)
 
+<!--
 ---
 
 --8<-- "external/phaedo/preface.md"
@@ -37,3 +40,4 @@
 ---
 
 --8<-- "external/phaedo/epilogue.md"
+-->

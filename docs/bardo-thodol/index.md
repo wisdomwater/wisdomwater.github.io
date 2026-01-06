@@ -2,6 +2,7 @@
 
 [Order on Amazon](https://a.co/d/eBIlS6I){ .md-button }
 
+<!--
 [Download PDF](https://github.com/wisdomwater/bardo-thodol/releases/download/latest/bardo-thodol.pdf){ .md-button }
 
 [Download EPUB](https://github.com/wisdomwater/bardo-thodol/releases/download/latest/bardo-thodol.epub){ .md-button }
@@ -9,9 +10,11 @@
 [Download DOCX](https://github.com/wisdomwater/bardo-thodol/releases/download/latest/bardo-thodol.docx){ .md-button }
 
 [Download Markdown](https://github.com/wisdomwater/bardo-thodol/releases/download/latest/bardo-thodol.md){ .md-button }
+-->
 
 ![cover](https://github.com/wisdomwater/bardo-thodol/releases/download/latest/cover.png)
 
+<!--
 ---
 
 --8<-- "external/bardo-thodol/introduction.md"
@@ -76,3 +79,5 @@
 ---
 
 --8<-- "external/bardo-thodol/epilogue.md"
+
+-->

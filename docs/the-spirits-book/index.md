@@ -2,6 +2,7 @@
 
 [Order on Amazon](https://amazon.com){ .md-button }
 
+<!--
 [Download PDF](https://github.com/wisdomwater/the-spirits-book/releases/download/latest/the-spirits-book.pdf){ .md-button }
 
 [Download EPUB](https://github.com/wisdomwater/the-spirits-book/releases/download/latest/the-spirits-book.epub){ .md-button }
@@ -9,9 +10,11 @@
 [Download DOCX](https://github.com/wisdomwater/the-spirits-book/releases/download/latest/the-spirits-book.docx){ .md-button }
 
 [Download Markdown](https://github.com/wisdomwater/the-spirits-book/releases/download/latest/the-spirits-book.md){ .md-button }
+-->
 
 ![cover](https://github.com/wisdomwater/the-spirits-book/releases/download/latest/cover.png)
 
+<!--
 ---
 
 --8<-- "external/the-spirits-book/preface.md"
@@ -78,3 +81,5 @@
 --8<-- "external/the-spirits-book/chapters/part-04/001.md"
 --8<-- "external/the-spirits-book/chapters/part-04/002.md"
 --8<-- "external/the-spirits-book/chapters/part-04/003.md"
+
+-->

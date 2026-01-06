@@ -2,14 +2,17 @@
 
 [Order on Amazon](https://a.co/d/4cwDSTX){ .md-button }
 
+<!--
 [Download PDF](https://github.com/wisdomwater/the-journey-home/releases/download/latest/the-journey-home.pdf){ .md-button }
 
 [Download EPUB](https://github.com/wisdomwater/the-journey-home/releases/download/latest/the-journey-home.epub){ .md-button }
 
 [Download Markdown](https://github.com/wisdomwater/the-journey-home/releases/download/latest/the-journey-home.md){ .md-button }
+-->
 
 ![cover](https://github.com/wisdomwater/the-journey-home/releases/download/latest/cover.png)
 
+<!--
 ---
 
 --8<-- "external/the-journey-home/foreword.md"
@@ -38,3 +41,5 @@
 --8<-- "external/the-journey-home/chapters/20.md"
 --8<-- "external/the-journey-home/chapters/21.md"
 --8<-- "external/the-journey-home/chapters/22.md"
+
+-->

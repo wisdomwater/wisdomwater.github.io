@@ -1,7 +1,8 @@
 # Pistis Sophia
 
-Read online or download the PDF.
+[Order on Amazon](https://www.amazon.com/dp/B0FTTH34NT){ .md-button }
 
+<!--
 [Download PDF](https://github.com/wisdomwater/pistis-sophia/releases/download/latest/pistis-sophia.pdf){ .md-button }
 
 [Download EPUB](https://github.com/wisdomwater/pistis-sophia/releases/download/latest/pistis-sophia.epub){ .md-button }
@@ -9,9 +10,11 @@ Read online or download the PDF.
 [Download DOCX](https://github.com/wisdomwater/pistis-sophia/releases/download/latest/pistis-sophia.docx){ .md-button }
 
 [Download Markdown](https://github.com/wisdomwater/pistis-sophia/releases/download/latest/pistis-sophia.md){ .md-button }
+-->
 
 ![cover](https://github.com/wisdomwater/pistis-sophia/releases/download/latest/cover.png)
 
+<!--
 ---
 
 --8<-- "external/pistis-sophia/foreword.md"
@@ -194,3 +197,4 @@ Read online or download the PDF.
 --8<-- "external/pistis-sophia/chapters/6/147.md"
 --8<-- "external/pistis-sophia/chapters/6/148.md"
 --8<-- "external/pistis-sophia/chapters/6/148a.md"
+-->

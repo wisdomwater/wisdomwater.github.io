@@ -1,5 +1,8 @@
 # Aurora - The Rising of the Dawn
 
+[Order on Amazon](https://www.amazon.com/dp/B0GDGBLQP1){ .md-button }
+
+<!--
 [Download PDF](https://github.com/wisdomwater/the-first-light/releases/download/latest/the-first-light.pdf){ .md-button }
 
 [Download EPUB](https://github.com/wisdomwater/the-first-light/releases/download/latest/the-first-light.epub){ .md-button }
@@ -7,8 +10,11 @@
 [Download DOCX](https://github.com/wisdomwater/the-first-light/releases/download/latest/the-first-light.docx){ .md-button }
 
 [Download Markdown](https://github.com/wisdomwater/the-first-light/releases/download/latest/the-first-light.md){ .md-button }
+-->
 
 ![cover](https://github.com/wisdomwater/the-first-light/releases/download/latest/cover.png)
+
+<!--
 
 ---
 
@@ -252,3 +258,5 @@
 ---
 
 --8<-- "external/the-first-light/appendix.md"
+
+-->

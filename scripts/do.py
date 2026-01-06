@@ -93,16 +93,22 @@ def pistis_sophia():
     return PistisSophia()
 
 
-@define_book("the-god-who-sees")
-def the_god_who_sees():
-    from books.the_god_who_sees import TheGodWhoSees
-    return TheGodWhoSees()
+@define_book("the-everlasting-gospel")
+def the_everlasting_gospel():
+    from books.the_everlasting_gospel import TheEverlastingGospel
+    return TheEverlastingGospel()
 
 
 @define_book("the-first-light")
 def the_first_light():
     from books.the_first_light import TheFirstLight
     return TheFirstLight()
+
+
+@define_book("the-god-who-sees")
+def the_god_who_sees():
+    from books.the_god_who_sees import TheGodWhoSees
+    return TheGodWhoSees()
 
 
 @define_book("the-greater-mercy")

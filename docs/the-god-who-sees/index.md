@@ -2,6 +2,7 @@
 
 [Order on Amazon](https://a.co/d/4PWKGI6){ .md-button }
 
+<!--
 [Download PDF](https://github.com/wisdomwater/the-god-who-sees/releases/download/latest/the-god-who-sees.pdf){ .md-button }
 
 [Download EPUB](https://github.com/wisdomwater/the-god-who-sees/releases/download/latest/the-god-who-sees.epub){ .md-button }
@@ -9,9 +10,11 @@
 [Download DOCX](https://github.com/wisdomwater/the-god-who-sees/releases/download/latest/the-god-who-sees.docx){ .md-button }
 
 [Download Markdown](https://github.com/wisdomwater/the-god-who-sees/releases/download/latest/the-god-who-sees.md){ .md-button }
+-->
 
 ![cover](https://github.com/wisdomwater/the-god-who-sees/releases/download/latest/cover.png)
 
+<!--
 ---
 
 --8<-- "external/the-god-who-sees/introduction.md"
@@ -31,3 +34,5 @@
 ---
 
 --8<-- "external/the-god-who-sees/conclusion.md"
+
+-->
