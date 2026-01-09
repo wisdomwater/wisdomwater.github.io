@@ -10,9 +10,10 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 
 ## Books
 
-- [Pistis Sophia](pistis-sophia/index.md)
 - [Aurora](the-first-light/index.md)
+- [Held to the End](held-to-the-end/index.md)
 - [Phaedo](phaedo/index.md)
+- [Pistis Sophia](pistis-sophia/index.md)
 - [The Everlasting Gospel](the-everlasting-gospel/index.md)
 - [The God Who Sees](the-god-who-sees/index.md)
 - [The Greater Mercy](the-greater-mercy/index.md)

@@ -28,3 +28,6 @@
 [submodule "external/pistis-sophia"]
 	path = external/pistis-sophia
 	url = https://github.com/wisdomwater/pistis-sophia
+[submodule "external/held-to-the-end"]
+	path = external/held-to-the-end
+	url = https://github.com/wisdomwater/held-to-the-end

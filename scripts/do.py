@@ -81,6 +81,12 @@ def bardo_thodol():
     return BardoThodol()
 
 
+@define_book("held-to-the-end")
+def bardo_thodol():
+    from books.held_to_the_end import HeldToTheEnd
+    return HeldToTheEnd()
+
+
 @define_book("phaedo")
 def phaedo():
     from books.phaedo import Phaedo
