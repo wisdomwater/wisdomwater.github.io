@@ -48,8 +48,7 @@ class BaseBook:
         content = ""
         for file in files:
             with open(file, encoding="utf-8", errors="ignore") as f:
-                content += f.read()
-                content += "\n::: pagebreak\n:::\n\n"
+                content += f.read().strip() + "\n\n::: pagebreak\n:::\n\n"
         content = content.replace("<!-- PAGEBREAK -->", "\n::: pagebreak\n:::\n")
         content = content.strip()
         return content
