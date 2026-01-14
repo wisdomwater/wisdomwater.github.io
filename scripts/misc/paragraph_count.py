@@ -19,7 +19,6 @@ The script prints one line per processed file. Returns exit code 0 on success.
 
 from __future__ import annotations
 
-import argparse
 import sys
 from pathlib import Path
 from typing import Iterable, List, Tuple
@@ -61,34 +60,11 @@ def process_path(path: Path) -> List[Tuple[int, Path]]:
     return results
 
 
-def parse_args(argv: list[str]) -> argparse.Namespace:
-    def parse_args(argv: list[str]) -> argparse.Namespace:
-        parser = argparse.ArgumentParser(description="Count paragraphs in markdown files.")
-        parser.add_argument("path", help="File or directory to process")
-        parser.add_argument(
-            "--below",
-            type=int,
-            metavar="N",
-            help="Only show files with paragraph count <= N",
-        )
-        parser.add_argument(
-            "--above",
-            type=int,
-            metavar="N",
-            help="Only show files with paragraph count >= N",
-        )
-        parser.add_argument(
-            "--sort",
-            choices=("asc", "desc", "file"),
-            default="file",
-            help="Sort by count (asc, desc) or by file. Default: file",
-        )
-        return parser.parse_args(argv[1:])
-
-
 def main(argv: list[str]) -> int:
-    args = parse_args(argv)
-    target = Path(args.path)
+    if len(argv) != 2:
+        print("Usage: python scripts\\misc\\paragraph_count.py PATH")
+        return 2
+    target = Path(argv[1])
     if not target.exists():
         print(f"Path not found: {target}")
         return 3
@@ -98,27 +74,12 @@ def main(argv: list[str]) -> int:
         print("No markdown files found.")
         return 0
 
-    # Remove values outside the limits
-    if args.above:
-        results = [x for x in results if int(x[0]) >= int(args.above)]
-    if args.below:
-        results = [x for x in results if int(x[0]) <= int(args.above)]
-
     # Determine width for count column
     max_count = max(cnt for cnt, _ in results)
     width = max(2, len(str(max_count)))
 
     # Sort by filename for consistent output
-    def sort_by(t):
-        sort_value = args.sort
-        if sort_value == "file":
-            return str(t[1])
-        if sort_value == "asc":
-            return int(t[0])
-        if sort_value == "desc":
-            return int(t[0]) * (-1)
-        raise ValueError(f"Unknow sort value '{sort_value}'") 
-    results.sort(key=sort_by)
+    results.sort(key=lambda t: str(t[1]))
 
     for cnt, f in results:
         # Print relative path from cwd for readability
