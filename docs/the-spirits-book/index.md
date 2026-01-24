@@ -1,6 +1,6 @@
 # The Spirits' Book
 
-[Order on Amazon](https://amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0GF4JC6DB){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-spirits-book/releases/download/latest/the-spirits-book.pdf){ .md-button }
