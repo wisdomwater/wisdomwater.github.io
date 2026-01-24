@@ -1,6 +1,6 @@
 # The Everlasting Gospel
 
-[Order on Amazon](https://amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0GF3LPWQ1){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-everlasting-gospel/releases/download/latest/the-everlasting-gospel.pdf){ .md-button }
