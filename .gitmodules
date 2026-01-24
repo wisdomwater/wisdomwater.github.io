@@ -31,3 +31,6 @@
 [submodule "external/held-to-the-end"]
 	path = external/held-to-the-end
 	url = https://github.com/wisdomwater/held-to-the-end
+[submodule "external/the-interior-castle"]
+	path = external/the-interior-castle
+	url = https://github.com/wisdomwater/the-interior-castle

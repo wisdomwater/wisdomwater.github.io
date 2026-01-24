@@ -123,6 +123,12 @@ def the_greater_mercy():
     return TheGreaterMercy()
 
 
+@define_book("the-interior-castle")
+def the_interior_castle():
+    from books.the_interior_castle import TheInteriorCastle
+    return TheInteriorCastle()
+
+
 @define_book("the-journey-home")
 def the_journey_home():
     from books.the_journey_home import TheJourneyHome
