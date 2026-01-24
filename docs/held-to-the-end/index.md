@@ -1,6 +1,6 @@
 # Held to the End
 
-[Order on Amazon](https://amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0GGL37Y1J){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-everlasting-gospel/releases/download/latest/held-to-the-end.pdf){ .md-button }
