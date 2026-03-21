@@ -27,6 +27,9 @@ class BaseBook:
         content = self.get_md_content(format="epub")
         return content
 
+    def get_extra_pandoc_options(self, format):
+        return ""
+
     def get_copyright_md(self, format):
         if format == "epub":
             return os.path.join(self.base_dir, "copyright-epub.md")
@@ -65,11 +68,12 @@ class BaseBook:
         # Do not include cover for now
         cover_image = ""  # self.get_cover_image()
         cover_option = f"--epub-cover-image={cover_image} " if cover_image else ""
+        extra_options = self.get_extra_pandoc_options(format="epub")
 
         print(f"Creating {self.book_epub}")
         os.makedirs(os.path.dirname(self.book_epub), exist_ok=True)
         exit_code = os.system(
-            f"pandoc {book_md} -o {self.book_epub} --metadata-file={self.metadata} {cover_option} --lua-filter={self.pagebreak_lua}"
+            f"pandoc {book_md} -o {self.book_epub} --metadata-file={self.metadata} {cover_option} --lua-filter={self.pagebreak_lua} {extra_options}"
         )
         if exit_code != 0:
             print("Failed to generate epub")
@@ -79,10 +83,12 @@ class BaseBook:
         filename = self.book_docx
         print(f"Creating {filename}")
 
+        extra_options = self.get_extra_pandoc_options(format="docx")
+
         # Ensure Pandoc does not auto-generate a table of contents for DOCX output
         # Some Pandoc versions add a TOC when styles or templates request it; explicitly set toc=false
         exit_code = os.system(
-            f"pandoc {self.book_md} -o {filename} --metadata-file={self.metadata} --metadata=toc:false --lua-filter={self.pagebreak_lua} --to=docx"
+            f"pandoc {self.book_md} -o {filename} --metadata-file={self.metadata} --metadata=toc:false --lua-filter={self.pagebreak_lua} --to=docx {extra_options}"
         )
         if exit_code != 0:
             print("Failed to generate docx")
@@ -96,11 +102,13 @@ class BaseBook:
             cover_option = f"--include-before-body={self.cover_tex} "
         else:
             cover_option = ""
+        
+        extra_options = self.get_extra_pandoc_options(format="pdf")
 
         print(f"Creating {self.book_pdf}")
         os.makedirs(os.path.dirname(self.book_pdf), exist_ok=True)
         exit_code = os.system(
-            f"pandoc {self.book_md} -o {self.book_pdf} --pdf-engine=xelatex --metadata-file={self.metadata} --template={self.mytemplate_tex} --lua-filter={self.pagebreak_lua} {cover_option}"
+            f"pandoc {self.book_md} -o {self.book_pdf} --pdf-engine=xelatex --metadata-file={self.metadata} --template={self.mytemplate_tex} --lua-filter={self.pagebreak_lua} {cover_option} {extra_options}"
         )
         if exit_code != 0:
             print("Failed to generate pdf")
@@ -109,8 +117,9 @@ class BaseBook:
         print(f"Creating {self.book_paperback_pdf}")
         os.makedirs(os.path.dirname(self.book_paperback_pdf), exist_ok=True)
         metadata_file = self.create_paperback_metadata(self.metadata)
+        extra_options = self.get_extra_pandoc_options(format="paperback")
         exit_code = os.system(
-            f"pandoc {self.book_md} -o {self.book_paperback_pdf} --pdf-engine=xelatex --metadata-file={metadata_file} --metadata=toc:false --template={self.mytemplate_tex} --lua-filter={self.pagebreak_lua} --variable=paper-size:a5 --variable=margin-left:0.75in --variable=margin-right:0.75in --variable=margin-top:1in --variable=margin-bottom:1in"
+            f"pandoc {self.book_md} -o {self.book_paperback_pdf} --pdf-engine=xelatex --metadata-file={metadata_file} --metadata=toc:false --template={self.mytemplate_tex} --lua-filter={self.pagebreak_lua} --variable=paper-size:a5 --variable=margin-left:0.75in --variable=margin-right:0.75in --variable=margin-top:1in --variable=margin-bottom:1in {extra_options}"
         )
         if exit_code != 0:
             print("Failed to generate paperback pdf")

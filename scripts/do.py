@@ -99,6 +99,12 @@ def pistis_sophia():
     return PistisSophia()
 
 
+@define_book("the-consolation-of-philosophy")
+def the_consolation_of_philosophy():
+    from books.the_consolation_of_philosophy import TheConsolationOfPhilosophy
+    return TheConsolationOfPhilosophy()
+
+
 @define_book("the-everlasting-gospel")
 def the_everlasting_gospel():
     from books.the_everlasting_gospel import TheEverlastingGospel

@@ -34,3 +34,6 @@
 [submodule "external/the-interior-castle"]
 	path = external/the-interior-castle
 	url = https://github.com/wisdomwater/the-interior-castle
+[submodule "external/the-consolation-of-philosophy"]
+	path = external/the-consolation-of-philosophy
+	url = https://github.com/wisdomwater/the-consolation-of-philosophy
