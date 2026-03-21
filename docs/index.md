@@ -20,6 +20,7 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 - [The Greater Mercy](the-greater-mercy/index.md)
 - [The Interior Castle](the-interior-castle/index.md)
 - [The Journey Home](the-journey-home/index.md)
+- [The Mirror of Simple Souls](the-mirror-of-simple-souls/index.md)
 - [The Spirits' Book](the-spirits-book/index.md)
 - [The Tibetan Book of the Dead](bardo-thodol/index.md)
 - [The Way of the Pilgrim](the-way-of-the-pilgrim/index.md)

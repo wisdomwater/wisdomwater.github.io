@@ -141,6 +141,12 @@ def the_journey_home():
     return TheJourneyHome()
 
 
+@define_book("the-mirror-of-simple-souls")
+def the_mirror_of_simple_souls():
+    from books.the_mirror_of_simple_souls import TheMirrorOfSimpleSouls
+    return TheMirrorOfSimpleSouls()
+
+
 @define_book("the-spirits-book")
 def the_spirits_book():
     from books.the_spirits_book import TheSpiritsBook
