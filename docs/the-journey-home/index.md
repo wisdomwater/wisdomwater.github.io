@@ -15,7 +15,7 @@
 <!--
 ---
 
---8<-- "external/the-journey-home/foreword.md"
+--8<-- "external/the-journey-home/preface.md"
 
 ---
 
