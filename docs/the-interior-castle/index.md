@@ -1,6 +1,6 @@
 # The Journey Home
 
-[Order on Amazon](https://amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0GMDSJY27){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-interior-castle/releases/download/latest/the-interior-castle.pdf){ .md-button }
