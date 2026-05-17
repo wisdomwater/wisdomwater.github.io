@@ -14,6 +14,7 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 - [Held to the End](held-to-the-end/index.md)
 - [Phaedo](phaedo/index.md)
 - [Pistis Sophia](pistis-sophia/index.md)
+- [The Book of Life's Blessings](the-book-of-lifes-blessings/index.md)
 - [The Consolation of Philosophy](the-consolation-of-philosophy/index.md)
 - [The Everlasting Gospel](the-everlasting-gospel/index.md)
 - [The God Who Sees](the-god-who-sees/index.md)

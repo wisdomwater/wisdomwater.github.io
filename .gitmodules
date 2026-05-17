@@ -40,3 +40,6 @@
 [submodule "external/the-mirror-of-simple-souls"]
 	path = external/the-mirror-of-simple-souls
 	url = https://github.com/wisdomwater/the-mirror-of-simple-souls
+[submodule "external/the-book-of-lifes-blessings"]
+	path = external/the-book-of-lifes-blessings
+	url = https://github.com/wisdomwater/the-book-of-lifes-blessings
