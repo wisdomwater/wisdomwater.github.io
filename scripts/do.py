@@ -105,6 +105,12 @@ def the_book_of_lifes_blessings():
     return TheBookOfLifesBlessings()
 
 
+@define_book("the-cloud-of-unknowing")
+def the_cloud_of_unknowing():
+    from books.the_cloud_of_unknowing import TheCloudOfUnknowing
+    return TheCloudOfUnknowing()
+
+
 @define_book("the-consolation-of-philosophy")
 def the_consolation_of_philosophy():
     from books.the_consolation_of_philosophy import TheConsolationOfPhilosophy
