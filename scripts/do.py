@@ -87,6 +87,12 @@ def bardo_thodol():
     return HeldToTheEnd()
 
 
+@define_book("light-unending")
+def light_unending():
+    from books.light_unending import LightUnending
+    return LightUnending()
+
+
 @define_book("phaedo")
 def phaedo():
     from books.phaedo import Phaedo

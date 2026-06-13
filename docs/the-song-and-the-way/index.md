@@ -1,6 +1,6 @@
 # The Song and the Way
 
-[Order on Amazon](){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0H56JLQP7){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-song-and-the-way/releases/download/latest/the-song-and-the-way.pdf){ .md-button }

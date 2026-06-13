@@ -12,6 +12,7 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 
 - [Aurora](the-first-light/index.md)
 - [Held to the End](held-to-the-end/index.md)
+- [Light Unending](light-unending/index.md)
 - [Phaedo](phaedo/index.md)
 - [Pistis Sophia](pistis-sophia/index.md)
 - [The Book of Life's Blessings](the-book-of-lifes-blessings/index.md)

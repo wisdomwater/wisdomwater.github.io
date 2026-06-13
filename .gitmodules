@@ -49,3 +49,6 @@
 [submodule "external/the-cloud-of-unknowing"]
 	path = external/the-cloud-of-unknowing
 	url = https://github.com/wisdomwater/the-cloud-of-unknowing
+[submodule "external/light-unending"]
+	path = external/light-unending
+	url = https://github.com/wisdomwater/light-unending
