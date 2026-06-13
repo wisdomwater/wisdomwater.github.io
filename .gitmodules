@@ -43,3 +43,9 @@
 [submodule "external/the-book-of-lifes-blessings"]
 	path = external/the-book-of-lifes-blessings
 	url = https://github.com/wisdomwater/the-book-of-lifes-blessings
+[submodule "external/the-song-and-the-way"]
+	path = external/the-song-and-the-way
+	url = https://github.com/wisdomwater/the-song-and-the-way
+[submodule "external/the-cloud-of-unknowing"]
+	path = external/the-cloud-of-unknowing
+	url = https://github.com/wisdomwater/the-cloud-of-unknowing

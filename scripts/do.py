@@ -153,6 +153,12 @@ def the_mirror_of_simple_souls():
     return TheMirrorOfSimpleSouls()
 
 
+@define_book("the-song-and-the-way")
+def the_song_and_the_way():
+    from books.the_song_and_the_way import TheSongAndTheWayBook
+    return TheSongAndTheWayBook()
+
+
 @define_book("the-spirits-book")
 def the_spirits_book():
     from books.the_spirits_book import TheSpiritsBook

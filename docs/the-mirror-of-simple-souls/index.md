@@ -7,6 +7,8 @@
 
 [Download EPUB](https://github.com/wisdomwater/the-mirror-of-simple-souls/releases/download/latest/the-mirror-of-simple-souls.epub){ .md-button }
 
+[Download DOCX](https://github.com/wisdomwater/the-mirror-of-simple-souls/releases/download/latest/the-mirror-of-simple-souls.docx){ .md-button }
+
 [Download Markdown](https://github.com/wisdomwater/the-mirror-of-simple-souls/releases/download/latest/the-mirror-of-simple-souls.md){ .md-button }
 -->
 

@@ -7,6 +7,8 @@
 
 [Download EPUB](https://github.com/wisdomwater/the-journey-home/releases/download/latest/the-journey-home.epub){ .md-button }
 
+[Download DOCX](https://github.com/wisdomwater/the-journey-home/releases/download/latest/the-journey-home.docx){ .md-button }
+
 [Download Markdown](https://github.com/wisdomwater/the-journey-home/releases/download/latest/the-journey-home.md){ .md-button }
 -->
 

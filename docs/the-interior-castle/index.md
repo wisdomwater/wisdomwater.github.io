@@ -7,6 +7,8 @@
 
 [Download EPUB](https://github.com/wisdomwater/the-interior-castle/releases/download/latest/the-interior-castle.epub){ .md-button }
 
+[Download DOCX](https://github.com/wisdomwater/the-interior-castle/releases/download/latest/the-interior-castle.docx){ .md-button }
+
 [Download Markdown](https://github.com/wisdomwater/the-interior-castle/releases/download/latest/the-interior-castle.md){ .md-button }
 -->
 
