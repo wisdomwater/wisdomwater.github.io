@@ -1,4 +1,4 @@
-# The Journey Home
+# The Interior Castle
 
 [Order on Amazon](https://www.amazon.com/dp/B0GMDSJY27){ .md-button }
 

@@ -1,4 +1,4 @@
-# Aurora - The Rising of the Dawn
+# The Book of Life's Blessings
 
 [Order on Amazon](https://www.amazon.com){ .md-button }
 

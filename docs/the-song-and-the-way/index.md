@@ -1,4 +1,4 @@
-# The Mirror of Simple Souls
+# The Song and the Way
 
 [Order on Amazon](){ .md-button }
 

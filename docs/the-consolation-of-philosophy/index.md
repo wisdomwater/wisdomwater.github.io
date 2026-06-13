@@ -1,4 +1,4 @@
-# The Everlasting Gospel
+# The Consolation of Philosophy
 
 [Order on Amazon](https://www.amazon.com/dp/B0GMDH7GM5){ .md-button }
 
