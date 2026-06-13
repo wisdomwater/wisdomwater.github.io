@@ -1,6 +1,6 @@
 # The Book of Life's Blessings
 
-[Order on Amazon](https://www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0H3384DSF){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-book-of-lifes-blessings/releases/download/latest/the-book-of-lifes-blessings.pdf){ .md-button }
