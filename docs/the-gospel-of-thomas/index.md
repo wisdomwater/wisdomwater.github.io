@@ -1,6 +1,6 @@
 # The Gospel of Thomas
 
-[Order on Amazon](http://amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0H6C92FX9){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-gospel-of-thomas/releases/download/latest/the-gospel-of-thomas.pdf){ .md-button }
