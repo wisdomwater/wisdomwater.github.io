@@ -59,7 +59,6 @@
 --8<-- "external/the-gospel-of-thomas/chapters/033.md"
 --8<-- "external/the-gospel-of-thomas/chapters/034.md"
 --8<-- "external/the-gospel-of-thomas/chapters/035.md"
---8<-- "external/the-gospel-of-thomas/chapters/035a.md"
 --8<-- "external/the-gospel-of-thomas/chapters/036.md"
 --8<-- "external/the-gospel-of-thomas/chapters/037.md"
 --8<-- "external/the-gospel-of-thomas/chapters/038.md"
@@ -74,7 +73,6 @@
 --8<-- "external/the-gospel-of-thomas/chapters/046.md"
 --8<-- "external/the-gospel-of-thomas/chapters/047.md"
 --8<-- "external/the-gospel-of-thomas/chapters/048.md"
---8<-- "external/the-gospel-of-thomas/chapters/048a.md"
 --8<-- "external/the-gospel-of-thomas/chapters/049.md"
 
 --8<-- "external/the-gospel-of-thomas/chapters/050.md"
@@ -84,7 +82,6 @@
 --8<-- "external/the-gospel-of-thomas/chapters/054.md"
 --8<-- "external/the-gospel-of-thomas/chapters/055.md"
 --8<-- "external/the-gospel-of-thomas/chapters/056.md"
---8<-- "external/the-gospel-of-thomas/chapters/056a.md"
 --8<-- "external/the-gospel-of-thomas/chapters/057.md"
 --8<-- "external/the-gospel-of-thomas/chapters/058.md"
 --8<-- "external/the-gospel-of-thomas/chapters/059.md"

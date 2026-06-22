@@ -1,6 +1,6 @@
 # Light Unending
 
-[Order on Amazon](http://amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0H6C5J3CY){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/light-unending/releases/download/latest/light-unending.pdf){ .md-button }
