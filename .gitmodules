@@ -52,3 +52,9 @@
 [submodule "external/light-unending"]
 	path = external/light-unending
 	url = https://github.com/wisdomwater/light-unending
+[submodule "the-gospel-of-thomas"]
+	path = external/the-gospel-of-thomas
+	url = https://github.com/wisdomwater/the-gospel-of-thomas
+[submodule "external/on-first-principles"]
+	path = external/on-first-principles
+	url = https://github.com/wisdomwater/on-first-principles

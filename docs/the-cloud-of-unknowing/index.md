@@ -1,6 +1,6 @@
 # The Cloud of Unknowing
 
-[Order on Amazon](http://amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0H6BVZG9G){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-cloud-of-unknowing/releases/download/latest/the-cloud-of-unknowing.pdf){ .md-button }

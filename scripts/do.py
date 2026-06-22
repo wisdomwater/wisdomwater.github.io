@@ -93,6 +93,12 @@ def light_unending():
     return LightUnending()
 
 
+@define_book("on-first-principles")
+def on_first_principles():
+    from books.on_first_principles import OnFirstPrinciples
+    return OnFirstPrinciples()
+
+
 @define_book("phaedo")
 def phaedo():
     from books.phaedo import Phaedo
@@ -139,6 +145,12 @@ def the_first_light():
 def the_god_who_sees():
     from books.the_god_who_sees import TheGodWhoSees
     return TheGodWhoSees()
+
+
+@define_book("the-gospel-of-thomas")
+def the_gospel_of_thomas():
+    from books.the_gospel_of_thomas import TheGospelOfThomas
+    return TheGospelOfThomas()
 
 
 @define_book("the-greater-mercy")
