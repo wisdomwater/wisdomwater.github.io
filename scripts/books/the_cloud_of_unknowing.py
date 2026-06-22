@@ -1,4 +1,5 @@
 import os
+import re
 
 from .base import BaseBook
 
@@ -26,3 +27,8 @@ class TheCloudOfUnknowing(BaseBook):
                 continue
             filepath = os.path.join(self.chapters_dir, file)
             yield filepath
+
+    def get_epub_markdown_content(self):
+        content = self.get_md_content(format="epub")
+        content = re.sub(r"^# ", r"## ", content, flags=re.MULTILINE)
+        return content
