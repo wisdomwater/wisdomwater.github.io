@@ -58,3 +58,6 @@
 [submodule "external/on-first-principles"]
 	path = external/on-first-principles
 	url = https://github.com/wisdomwater/on-first-principles
+[submodule "external/god-in-the-hands-of-angry-sinners"]
+	path = external/god-in-the-hands-of-angry-sinners
+	url = https://github.com/wisdomwater/god-in-the-hands-of-angry-sinners

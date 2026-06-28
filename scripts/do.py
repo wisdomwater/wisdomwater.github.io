@@ -81,6 +81,12 @@ def bardo_thodol():
     return BardoThodol()
 
 
+@define_book("god-in-the-hands-of-angry-sinners")
+def god_in_the_hands_of_angry_sinners():
+    from books.god_in_the_hands_of_angry_sinners import GodInTheHandsOfAngrySinners
+    return GodInTheHandsOfAngrySinners()
+
+
 @define_book("held-to-the-end")
 def bardo_thodol():
     from books.held_to_the_end import HeldToTheEnd
