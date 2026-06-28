@@ -1,6 +1,6 @@
 # On First Principles
 
-[Order on Amazon](http://amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0H6T3TYKK){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/on-first-principles/releases/download/latest/on-first-principles.pdf){ .md-button }

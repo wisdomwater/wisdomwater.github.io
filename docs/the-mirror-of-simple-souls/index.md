@@ -1,6 +1,6 @@
 # The Mirror of Simple Souls
 
-[Order on Amazon](){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0GHP4B1RY){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-mirror-of-simple-souls/releases/download/latest/the-mirror-of-simple-souls.pdf){ .md-button }
