@@ -1,6 +1,6 @@
 # God in the Hands of Angry Sinners
 
-[Order on Amazon](www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/god-in-the-hands-of-angry-sinners/releases/download/latest/god-in-the-hands-of-angry-sinners.pdf){ .md-button }
