@@ -4,6 +4,8 @@ from .base import BaseBook
 
 
 class GodInTheHandsOfAngrySinners(BaseBook):
+    mytemplate_tex = os.path.join("scripts", "my-template-god-in-the-hands-of-angry-sinners.tex")
+
     base_dir = os.path.join("external", "god-in-the-hands-of-angry-sinners")
     chapters_dir = os.path.join(base_dir, "chapters")
 

@@ -1,0 +1,180 @@
+% Modern KOMA-Script template for Pandoc XeLaTeX PDFs
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+\documentclass[
+  $if(classoption)$$for(classoption)$$classoption$$sep$,$endfor$$else$oneside$endif$,
+  $if(fontsize)$$fontsize$$else$11pt$endif$
+]{scrbook}
+
+% --- Engine & language ---
+% XeLaTeX assumed; enables system fonts easily
+\usepackage{ifxetex}
+\ifxetex
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures=TeX, Scale=MatchLowercase}
+  $if(mainfont)$\setmainfont{$mainfont$}$endif$
+  $if(sansfont)$\setsansfont{$sansfont$}$endif$
+  $if(monofont)$\setmonofont{$monofont$}$endif$
+  \usepackage{polyglossia}
+  \setmainlanguage{$if(lang)$$lang$$else$english$endif$}
+\else
+  \usepackage[english]{babel}
+\fi
+
+% --- Image cover page ---
+\usepackage{tikz}
+
+% --- Encoding & microtypography ---
+\usepackage{microtype}
+\usepackage{csquotes}
+
+% Improve hyphenation and reduce overfull lines
+\righthyphenmin=2
+\lefthyphenmin=2
+% allow some extra flexibility in line-breaking to avoid margin overflow
+\emergencystretch=3em
+\tolerance=1000
+\hfuzz=1pt
+
+% --- Geometry ---
+\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
+
+% --- Colors & Links ---
+\usepackage{xcolor}
+\definecolor{LinkColor}{named}{$if(linkcolor)$$linkcolor$$else$MidnightBlue$endif$}
+\usepackage[
+  pdfborder={0 0 0},
+  colorlinks=true,
+  linkcolor=LinkColor,
+  urlcolor=LinkColor,
+  citecolor=LinkColor
+]{hyperref}
+
+% --- Headings (titlesec-like styling via KOMA options) ---
+\RedeclareSectionCommand[
+  beforeskip=1.5\baselineskip,
+  afterskip=0.6\baselineskip
+]{chapter}
+
+% A clean chapter style:
+\addtokomafont{chapter}{\sffamily\bfseries\Huge}
+\addtokomafont{section}{\sffamily\bfseries\Large}
+\addtokomafont{subsection}{\sffamily\bfseries\large}
+\addtokomafont{subsubsection}{\sffamily\bfseries\normalsize}
+
+% --- Paragraph styling ---
+$if(linestretch)$\linespread{$linestretch$}$endif$
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+% Allow TeX to be a bit more permissive with spacing to avoid overfull boxes
+\sloppy
+
+% --- Headers/Footers ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Outer header: chapter/section title depending on page style
+\fancyhead[LE,RO]{\sffamily\footnotesize\leftmark}
+\fancyfoot[LE,RO]{\sffamily\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% --- Figures & tables ---
+\usepackage{graphicx}
+\setkeys{Gin}{keepaspectratio=true}
+\usepackage{booktabs}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf}
+
+% --- Code blocks & syntax highlighting (Pandoc provides macros) ---
+$if(listings)$
+  \usepackage{listings}
+$endif$
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+% --- TOC depth ---
+$if(toc-depth)$
+\setcounter{tocdepth}{$toc-depth$}
+$endif$
+$if(secnumdepth)$
+\setcounter{secnumdepth}{$secnumdepth$}
+$endif$
+
+% --- TOC formatting: hide sections, show subsections with page numbers ---
+% Use titletoc/tocloft to customize the table of contents.
+\usepackage{titletoc}
+\usepackage{tocloft}
+% Remove (suppress) section (H2 / `##`) entries from the TOC entirely
+\titlecontents{section}
+  [0pt]
+  {}%
+  {}%
+  {}%
+  {}%
+% Show subsection (H3 / `###`) entries and their page numbers
+\titlecontents{subsection}
+  [2.5em]
+  {\addvspace{1pt}}%
+  {\contentslabel{2.5em}}%
+  {}%
+  {\hfill\contentspage}% show page numbers for `subsection` (H3/###)
+
+% --- Title page ---
+\newcommand{\PrintTitle}{
+  \begin{titlepage}
+    \centering
+    {\sffamily\bfseries\LARGE $title$ \par}
+    $if(subtitle)$\vspace{6pt}{\sffamily\large $subtitle$ \par}$endif$
+    \vspace{18pt}
+    $if(author)$
+      {\sffamily\normalsize $for(author)$$author$$sep$ \\ $endfor$ \par}
+    $endif$
+    \vspace{12pt}
+    $if(publisher)$
+      {\sffamily\small $publisher$ \par}
+    $endif$
+    \vfill
+    $if(date)$
+      {\sffamily\small $date$ \par}
+    $endif$
+  \end{titlepage}
+}
+
+% --- Pandoc tightlist fix ---
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% --- Document starts ---
+\begin{document}
+
+% Cover page
+$for(include-before)$
+$include-before$
+$endfor$
+
+% Front matter
+\frontmatter
+$if(title)$
+\PrintTitle
+$endif$
+
+$if(toc)$
+{\hypersetup{linkcolor=black}
+% Turn off page numbers for subsection entries in the TOC
+\cftpagenumbersoff{subsection}
+\tableofcontents
+\clearpage}
+$endif$
+
+% Main matter
+\mainmatter
+
+$body$
+
+$for(include-after)$
+$include-after$
+$endfor$
+
+\end{document}
