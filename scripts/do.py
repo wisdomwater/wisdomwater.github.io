@@ -117,6 +117,12 @@ def pistis_sophia():
     return PistisSophia()
 
 
+@define_book("revelations-of-divine-love")
+def revelations_of_divine_love():
+    from books.revelations_of_divine_love import RevelationsOfDivineLove
+    return RevelationsOfDivineLove()
+
+
 @define_book("the-book-of-lifes-blessings")
 def the_book_of_lifes_blessings():
     from books.the_book_of_lifes_blessings import TheBookOfLifesBlessings

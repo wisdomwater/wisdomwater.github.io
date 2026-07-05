@@ -17,6 +17,7 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 - [On First Principles](on-first-principles/index.md)
 - [Phaedo](phaedo/index.md)
 - [Pistis Sophia](pistis-sophia/index.md)
+- [Revelations of Divine Love](revelations-of-divine-love/index.md)
 - [The Book of Life's Blessings](the-book-of-lifes-blessings/index.md)
 - [The Cloud of Unknowing](the-cloud-of-unknowing/index.md)
 - [The Consolation of Philosophy](the-consolation-of-philosophy/index.md)
