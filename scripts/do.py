@@ -81,6 +81,12 @@ def bardo_thodol():
     return BardoThodol()
 
 
+@define_book("drawing-near")
+def drawing_near():
+    from books.drawing_near import DrawingNear
+    return DrawingNear()
+
+
 @define_book("god-in-the-hands-of-angry-sinners")
 def god_in_the_hands_of_angry_sinners():
     from books.god_in_the_hands_of_angry_sinners import GodInTheHandsOfAngrySinners

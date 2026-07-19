@@ -67,3 +67,6 @@
 [submodule "external/mystic-treatises"]
 	path = external/mystic-treatises
 	url = https://github.com/wisdomwater/mystic-treatises
+[submodule "external/drawing-near"]
+	path = external/drawing-near
+	url = https://github.com/wisdomwater/drawing-near
