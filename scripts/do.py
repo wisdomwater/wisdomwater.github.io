@@ -93,6 +93,12 @@ def bardo_thodol():
     return HeldToTheEnd()
 
 
+@define_book("mystic-treatises")
+def bardo_thodol():
+    from books.mystic_treatises import MysticTreatises
+    return MysticTreatises()
+
+
 @define_book("light-unending")
 def light_unending():
     from books.light_unending import LightUnending

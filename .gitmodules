@@ -64,3 +64,6 @@
 [submodule "external/revelations-of-divine-love"]
 	path = external/revelations-of-divine-love
 	url = https://github.com/wisdomwater/revelations-of-divine-love
+[submodule "external/mystic-treatises"]
+	path = external/mystic-treatises
+	url = https://github.com/wisdomwater/mystic-treatises
