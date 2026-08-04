@@ -34,3 +34,4 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 - [The Spirits' Book](the-spirits-book/index.md)
 - [The Tibetan Book of the Dead](bardo-thodol/index.md)
 - [The Way of the Pilgrim](the-way-of-the-pilgrim/index.md)
+- [Unspoken Sermons](unspoken-sermons/index.md)

@@ -1,6 +1,6 @@
 # Mystic Treatises
 
-[Order on Amazon](https://www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0H9JD44PV){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/mystic-treatises/releases/download/latest/mystic-treatises.pdf){ .md-button }

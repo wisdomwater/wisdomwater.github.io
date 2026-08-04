@@ -1,6 +1,6 @@
 # Revelations of Divine Love
 
-[Order on Amazon](https://www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0H8K5G6JS){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/revelations-of-divine-love/releases/download/latest/revelations-of-divine-love.pdf){ .md-button }

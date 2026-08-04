@@ -219,5 +219,11 @@ def the_way_of_the_pilgrim():
     return TheWayOfThePilgrim()
 
 
+@define_book("unspoken-sermons")
+def unspoken_sermons():
+    from books.unspoken_sermons import UnspokenSermons
+    return UnspokenSermons()
+
+
 if __name__ == "__main__":
     cli(prog_name="do")
