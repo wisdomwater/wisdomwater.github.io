@@ -195,6 +195,12 @@ def the_journey_home():
     return TheJourneyHome()
 
 
+@define_book("the-life-of-moses")
+def the_life_of_moses():
+    from books.the_life_of_moses import TheLifeOfMoses
+    return TheLifeOfMoses()
+
+
 @define_book("the-mirror-of-simple-souls")
 def the_mirror_of_simple_souls():
     from books.the_mirror_of_simple_souls import TheMirrorOfSimpleSouls

@@ -28,6 +28,7 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 - [The Gospel of Thomas](the-gospel-of-thomas/index.md)
 - [The Greater Mercy](the-greater-mercy/index.md)
 - [The Interior Castle](the-interior-castle/index.md)
+- [The Life of Moses](the-life-of-moses/index.md)
 - [The Journey Home](the-journey-home/index.md)
 - [The Mirror of Simple Souls](the-mirror-of-simple-souls/index.md)
 - [The Song and the Way](the-song-and-the-way/index.md)

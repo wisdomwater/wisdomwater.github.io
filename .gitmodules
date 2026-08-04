@@ -73,3 +73,6 @@
 [submodule "external/unspoken-sermons"]
 	path = external/unspoken-sermons
 	url = https://github.com/wisdomwater/unspoken-sermons
+[submodule "external/the-life-of-moses"]
+	path = external/the-life-of-moses
+	url = https://github.com/wisdomwater/the-life-of-moses
