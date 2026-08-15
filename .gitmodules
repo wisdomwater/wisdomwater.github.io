@@ -76,3 +76,6 @@
 [submodule "external/the-life-of-moses"]
 	path = external/the-life-of-moses
 	url = https://github.com/wisdomwater/the-life-of-moses
+[submodule "external/the-emerald-tablet"]
+	path = external/the-emerald-tablet
+	url = https://github.com/wisdomwater/the-emerald-tablet

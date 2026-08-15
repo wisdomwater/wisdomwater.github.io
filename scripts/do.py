@@ -153,6 +153,12 @@ def the_consolation_of_philosophy():
     return TheConsolationOfPhilosophy()
 
 
+@define_book("the-emerald-tablet")
+def the_emerald_tablet():
+    from books.the_emerald_tablet import TheEmeraldTablet
+    return TheEmeraldTablet()
+
+
 @define_book("the-everlasting-gospel")
 def the_everlasting_gospel():
     from books.the_everlasting_gospel import TheEverlastingGospel

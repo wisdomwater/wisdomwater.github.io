@@ -23,6 +23,7 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 - [The Book of Life's Blessings](the-book-of-lifes-blessings/index.md)
 - [The Cloud of Unknowing](the-cloud-of-unknowing/index.md)
 - [The Consolation of Philosophy](the-consolation-of-philosophy/index.md)
+- [The Emerald Tablet](the-emerald-tablet/index.md)
 - [The Everlasting Gospel](the-everlasting-gospel/index.md)
 - [The God Who Sees](the-god-who-sees/index.md)
 - [The Gospel of Thomas](the-gospel-of-thomas/index.md)
