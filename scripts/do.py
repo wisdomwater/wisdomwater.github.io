@@ -231,6 +231,12 @@ def the_way_of_the_pilgrim():
     return TheWayOfThePilgrim()
 
 
+@define_book("the-way-of-the-word")
+def the_way_of_the_word():
+    from books.the_way_of_the_word import TheWayOfTheWord
+    return TheWayOfTheWord()
+
+
 @define_book("unspoken-sermons")
 def unspoken_sermons():
     from books.unspoken_sermons import UnspokenSermons

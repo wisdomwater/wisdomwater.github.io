@@ -79,3 +79,6 @@
 [submodule "external/the-emerald-tablet"]
 	path = external/the-emerald-tablet
 	url = https://github.com/wisdomwater/the-emerald-tablet
+[submodule "external/the-way-of-the-word"]
+	path = external/the-way-of-the-word
+	url = https://github.com/wisdomwater/the-way-of-the-word
