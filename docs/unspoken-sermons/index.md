@@ -1,6 +1,6 @@
 # Unspoken Sermons
 
-[Order on Amazon](https://www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0HFDLFYXD){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/unspoken-sermons/releases/download/latest/unspoken-sermons.pdf){ .md-button }

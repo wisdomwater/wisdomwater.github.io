@@ -1,6 +1,6 @@
 # The Emerald Tablet
 
-[Order on Amazon](https://www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0HFDMJZ5B){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-emerald-tablet/releases/download/latest/the-emerald-tablet.pdf){ .md-button }

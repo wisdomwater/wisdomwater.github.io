@@ -1,6 +1,6 @@
 # Drawing Near
 
-[Order on Amazon](https://www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0HCWJ83V9){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/drawing-near/releases/download/latest/drawing-near.pdf){ .md-button }

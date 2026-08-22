@@ -1,6 +1,6 @@
 # The Life of Moses
 
-[Order on Amazon](https://www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0HFDJXKM5){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-life-of-moses/releases/download/latest/the-life-of-moses.pdf){ .md-button }
