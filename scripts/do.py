@@ -81,6 +81,12 @@ def bardo_thodol():
     return BardoThodol()
 
 
+@define_book("enoch-retold")
+def enoch_retold():
+    from books.enoch_retold import EnochRetold
+    return EnochRetold()
+
+
 @define_book("drawing-near")
 def drawing_near():
     from books.drawing_near import DrawingNear
@@ -94,13 +100,13 @@ def god_in_the_hands_of_angry_sinners():
 
 
 @define_book("held-to-the-end")
-def bardo_thodol():
+def held_to_the_end():
     from books.held_to_the_end import HeldToTheEnd
     return HeldToTheEnd()
 
 
 @define_book("mystic-treatises")
-def bardo_thodol():
+def mystic_treatises():
     from books.mystic_treatises import MysticTreatises
     return MysticTreatises()
 
@@ -109,6 +115,12 @@ def bardo_thodol():
 def light_unending():
     from books.light_unending import LightUnending
     return LightUnending()
+
+
+@define_book("number-go-up")
+def number_go_up():
+    from books.number_go_up import NumberGoUp
+    return NumberGoUp()
 
 
 @define_book("on-first-principles")

@@ -1,6 +1,6 @@
 # The Way of the Word
 
-[Order on Amazon](https://www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0HG5Y9RPX){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-way-of-the-word/releases/download/latest/the-way-of-the-word.pdf){ .md-button }

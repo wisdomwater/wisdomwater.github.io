@@ -12,6 +12,7 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 
 - [Aurora](the-first-light/index.md)
 - [Drawing Near](drawing-near/index.md)
+- [Enoch Retold](enoch-retold/index.md)
 - [God in the Hands of Angry Sinners](god-in-the-hands-of-angry-sinners/index.md)
 - [Held to the End](held-to-the-end/index.md)
 - [Light Unending](light-unending/index.md)

@@ -82,3 +82,9 @@
 [submodule "external/the-way-of-the-word"]
 	path = external/the-way-of-the-word
 	url = https://github.com/wisdomwater/the-way-of-the-word
+[submodule "external/enoch-retold"]
+	path = external/enoch-retold
+	url = https://github.com/wisdomwater/enoch-retold
+[submodule "external/number-go-up"]
+	path = external/number-go-up
+	url = https://github.com/wisdomwater/number-go-up

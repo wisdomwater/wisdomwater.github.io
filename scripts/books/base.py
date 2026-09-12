@@ -48,6 +48,9 @@ class BaseBook:
 
     def get_md_content(self, format=None):
         files = self.get_chapters(format)
+        return self._get_md_content_from_files(files)
+
+    def _get_md_content_from_files(self, files):
         content = ""
         for file in files:
             with open(file, encoding="utf-8", errors="ignore") as f:
