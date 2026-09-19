@@ -225,6 +225,12 @@ def the_mirror_of_simple_souls():
     return TheMirrorOfSimpleSouls()
 
 
+@define_book("the-shepherd-of-hermas")
+def the_shepherd_of_hermas():
+    from books.the_shepherd_of_hermas import TheShepherdOfHermas
+    return TheShepherdOfHermas()
+
+
 @define_book("the-song-and-the-way")
 def the_song_and_the_way():
     from books.the_song_and_the_way import TheSongAndTheWayBook

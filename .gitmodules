@@ -88,3 +88,6 @@
 [submodule "external/number-go-up"]
 	path = external/number-go-up
 	url = https://github.com/wisdomwater/number-go-up
+[submodule "external/the-shepherd-of-hermas"]
+	path = external/the-shepherd-of-hermas
+	url = https://github.com/wisdomwater/the-shepherd-of-hermas

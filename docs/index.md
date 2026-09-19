@@ -33,6 +33,7 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 - [The Life of Moses](the-life-of-moses/index.md)
 - [The Journey Home](the-journey-home/index.md)
 - [The Mirror of Simple Souls](the-mirror-of-simple-souls/index.md)
+- [The Shepherd of Hermas](the-shepherd-of-hermas/index.md)
 - [The Song and the Way](the-song-and-the-way/index.md)
 - [The Spirits' Book](the-spirits-book/index.md)
 - [The Tibetan Book of the Dead](bardo-thodol/index.md)
