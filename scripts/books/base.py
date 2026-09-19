@@ -1,4 +1,6 @@
 import os
+import re
+import subprocess
 import sys
 from textwrap import dedent
 import time
@@ -6,6 +8,7 @@ import time
 class BaseBook:
     pagebreak_lua = os.path.join("scripts", "pagebreak.lua")
     mytemplate_tex = os.path.join("scripts", "my-template.tex")
+    toc = False
 
     def __init__(self, name,
     ):
@@ -31,7 +34,7 @@ class BaseBook:
         return ""
 
     def get_copyright_md(self, format):
-        if format == "epub":
+        if format in ("epub", "docx", "markdown"):
             return os.path.join(self.base_dir, "copyright-epub.md")
         return os.path.join(self.base_dir, "copyright.md")
   
@@ -41,23 +44,46 @@ class BaseBook:
     def create_md(self):
         filename = self.book_md
         print(f"Creating {filename}")
-        content = self.get_md_content()
+        content = self.get_md_content(format="markdown")
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         with open(filename, "w", encoding="utf-8", errors="ignore") as f:
             f.write(content)
 
     def get_md_content(self, format=None):
-        files = self.get_chapters(format)
+        copyright_file = self.get_copyright_md(format)
+        files = [file for file in self.get_chapters(format) if os.path.normpath(file) != os.path.normpath(copyright_file)]
+        if format == "epub" and os.path.exists(copyright_file):
+            files.insert(0, copyright_file)
         return self._get_md_content_from_files(files)
 
     def _get_md_content_from_files(self, files):
         content = ""
         for file in files:
             with open(file, encoding="utf-8", errors="ignore") as f:
-                content += f.read().strip() + "\n\n::: pagebreak\n:::\n\n"
+                file_content = f.read().strip()
+            if not file_content:
+                continue
+            if content:
+                content += "\n\n"
+            content += file_content
         content = content.replace("<!-- PAGEBREAK -->", "\n::: pagebreak\n:::\n")
         content = content.strip()
         return content
+
+    def _run_pandoc(self, input_path, output_path, extra_args=None, metadata_file=None, template=None, pdf_engine=None):
+        cmd = ["pandoc", str(input_path), "-o", str(output_path)]
+        if metadata_file:
+            cmd.append(f"--metadata-file={metadata_file}")
+        if template:
+            cmd.append(f"--template={template}")
+        if pdf_engine:
+            cmd.append(f"--pdf-engine={pdf_engine}")
+        if self.pagebreak_lua:
+            cmd.append(f"--lua-filter={self.pagebreak_lua}")
+        if extra_args:
+            cmd.extend(extra_args)
+        print(f"Running: {' '.join(cmd)}")
+        return subprocess.run(cmd, check=False).returncode
 
     def create_epub(self):
         epub_markdown = self.get_epub_markdown_content()
@@ -68,6 +94,8 @@ class BaseBook:
         else:
             book_md = self.book_md
 
+        metadata_file = self.create_metadata(format="epub")
+
         # Do not include cover for now
         cover_image = ""  # self.get_cover_image()
         cover_option = f"--epub-cover-image={cover_image} " if cover_image else ""
@@ -75,66 +103,142 @@ class BaseBook:
 
         print(f"Creating {self.book_epub}")
         os.makedirs(os.path.dirname(self.book_epub), exist_ok=True)
-        exit_code = os.system(
-            f"pandoc {book_md} -o {self.book_epub} --metadata-file={self.metadata} {cover_option} --lua-filter={self.pagebreak_lua} {extra_options}"
-        )
+        extra_args = []
+        if cover_option:
+            extra_args.append(cover_option.strip())
+        if extra_options:
+            extra_args.extend(extra_options.split())
+        exit_code = self._run_pandoc(book_md, self.book_epub, extra_args=extra_args, metadata_file=metadata_file)
         if exit_code != 0:
             print("Failed to generate epub")
             sys.exit(1)
+        if os.path.exists(metadata_file):
+            os.remove(metadata_file)
 
     def create_docx(self):
         filename = self.book_docx
         print(f"Creating {filename}")
 
+        docx_md = os.path.join(os.path.dirname(self.book_md), f"{os.path.splitext(os.path.basename(self.book_md))[0]}-docx.md")
+        with open(docx_md, "w", encoding="utf-8", errors="ignore") as f:
+            f.write(self.get_md_content(format="docx"))
+
+        metadata_file = self.create_metadata(format="docx")
         extra_options = self.get_extra_pandoc_options(format="docx")
 
-        # Ensure Pandoc does not auto-generate a table of contents for DOCX output
-        # Some Pandoc versions add a TOC when styles or templates request it; explicitly set toc=false
-        exit_code = os.system(
-            f"pandoc {self.book_md} -o {filename} --metadata-file={self.metadata} --metadata=toc:false --lua-filter={self.pagebreak_lua} --to=docx {extra_options}"
-        )
+        # Ensure Pandoc does not auto-generate a table of contents for DOCX output.
+        # Some Pandoc versions add a TOC when styles or templates request it, and Word
+        # will later warn about that TOC field if it is present.
+        extra_args = ["--to=docx", "--metadata=toc=false"]
+        if extra_options:
+            extra_args.extend(extra_options.split())
+        exit_code = self._run_pandoc(docx_md, filename, extra_args=extra_args, metadata_file=metadata_file)
         if exit_code != 0:
             print("Failed to generate docx")
             sys.exit(1)
+        if os.path.exists(metadata_file):
+            os.remove(metadata_file)
+        if os.path.exists(docx_md):
+            os.remove(docx_md)
 
     def create_pdf(self):
-        cover_tex_content = self.get_cover_tex_content()
-        if cover_tex_content:
-            with open(self.cover_tex, "w", encoding="utf-8", errors="ignore") as f:
-                f.write(cover_tex_content)
-            cover_option = f"--include-before-body={self.cover_tex} "
-        else:
-            cover_option = ""
-        
+        pdf_md = os.path.join(os.path.dirname(self.book_md), f"{os.path.splitext(os.path.basename(self.book_md))[0]}-pdf.md")
+        with open(pdf_md, "w", encoding="utf-8", errors="ignore") as f:
+            f.write(self.get_md_content(format="pdf"))
+
+        metadata_file = self.create_metadata(format="pdf")
         extra_options = self.get_extra_pandoc_options(format="pdf")
 
         print(f"Creating {self.book_pdf}")
         os.makedirs(os.path.dirname(self.book_pdf), exist_ok=True)
-        exit_code = os.system(
-            f"pandoc {self.book_md} -o {self.book_pdf} --pdf-engine=xelatex --metadata-file={self.metadata} --template={self.mytemplate_tex} --lua-filter={self.pagebreak_lua} {cover_option} {extra_options}"
-        )
+        extra_args = []
+        cover_file = None
+        if os.path.exists(self.get_cover_image()):
+            cover_file = os.path.join(os.path.dirname(self.book_pdf), "cover.tex")
+            with open(cover_file, "w", encoding="utf-8", errors="ignore") as f:
+                f.write(self.get_cover_tex_content())
+            extra_args.append(f"--include-before-body={cover_file}")
+        if extra_options:
+            extra_args.extend(extra_options.split())
+        exit_code = self._run_pandoc(pdf_md, self.book_pdf, extra_args=extra_args, metadata_file=metadata_file, template=self.mytemplate_tex, pdf_engine="xelatex")
         if exit_code != 0:
             print("Failed to generate pdf")
+        if os.path.exists(metadata_file):
+            os.remove(metadata_file)
+        if os.path.exists(pdf_md):
+            os.remove(pdf_md)
+        if cover_file and os.path.exists(cover_file):
+            os.remove(cover_file)
 
     def create_paperback_pdf(self):
         print(f"Creating {self.book_paperback_pdf}")
         os.makedirs(os.path.dirname(self.book_paperback_pdf), exist_ok=True)
-        metadata_file = self.create_paperback_metadata(self.metadata)
+
+        paperback_md = os.path.join(os.path.dirname(self.book_md), f"{os.path.splitext(os.path.basename(self.book_md))[0]}-paperback.md")
+        with open(paperback_md, "w", encoding="utf-8", errors="ignore") as f:
+            f.write(self.get_md_content(format="paperback"))
+
+        metadata_file = self.create_metadata(format="paperback")
         extra_options = self.get_extra_pandoc_options(format="paperback")
-        exit_code = os.system(
-            f"pandoc {self.book_md} -o {self.book_paperback_pdf} --pdf-engine=xelatex --metadata-file={metadata_file} --metadata=toc:false --template={self.mytemplate_tex} --lua-filter={self.pagebreak_lua} --variable=paper-size:a5 --variable=margin-left:0.75in --variable=margin-right:0.75in --variable=margin-top:1in --variable=margin-bottom:1in {extra_options}"
-        )
+        extra_args = [
+            "--variable=paper-size:a5",
+            "--variable=margin-left:0.75in",
+            "--variable=margin-right:0.75in",
+            "--variable=margin-top:1in",
+            "--variable=margin-bottom:1in",
+        ]
+        if extra_options:
+            extra_args.extend(extra_options.split())
+        exit_code = self._run_pandoc(paperback_md, self.book_paperback_pdf, extra_args=extra_args, metadata_file=metadata_file, template=self.mytemplate_tex, pdf_engine="xelatex")
         if exit_code != 0:
             print("Failed to generate paperback pdf")
         if os.path.exists(metadata_file):
             os.remove(metadata_file)
+        if os.path.exists(paperback_md):
+            os.remove(paperback_md)
 
-    def create_paperback_metadata(self, original_metadata):
-        paperback_metadata = original_metadata.replace(".yaml", "-paperback.yaml")
-        with open(original_metadata, "r", encoding="utf-8", errors="ignore") as f:
-            with open(paperback_metadata, "w", encoding="utf-8", errors="ignore") as fout:
-                fout.write(f.read().replace("oneside", "twoside"))
-        return paperback_metadata
+    def create_metadata(self, format):
+        metadata_path = self.metadata
+        if format == "paperback":
+            metadata_path = self.metadata.replace(".yaml", "-paperback.yaml")
+        elif format == "pdf":
+            metadata_path = self.metadata.replace(".yaml", "-pdf.yaml")
+        elif format == "docx":
+            metadata_path = self.metadata.replace(".yaml", "-docx.yaml")
+        elif format == "epub":
+            metadata_path = self.metadata.replace(".yaml", "-epub.yaml")
+
+        with open(self.metadata, "r", encoding="utf-8", errors="ignore") as f:
+            metadata_content = f.read().rstrip()
+
+        if format == "paperback":
+            metadata_content = metadata_content.replace("oneside", "twoside")
+
+        metadata_content = re.sub(
+            r"(?m)^toc:\s*(true|false)\s*$",
+            f"toc: {'true' if self.toc else 'false'}",
+            metadata_content,
+            count=1,
+        )
+
+        copyright_path = self.get_copyright_md(format)
+        before_toc = ""
+        if os.path.exists(copyright_path):
+            with open(copyright_path, "r", encoding="utf-8", errors="ignore") as f:
+                before_toc = f.read().strip()
+
+        if before_toc:
+            block = "before-toc: |\n"
+            for line in before_toc.splitlines():
+                block += f"  {line}\n"
+            if metadata_content.endswith("---"):
+                metadata_content = metadata_content[:-3].rstrip() + "\n\n" + block.rstrip() + "\n---\n"
+            else:
+                metadata_content = metadata_content.rstrip() + "\n\n" + block.rstrip() + "\n"
+
+        with open(metadata_path, "w", encoding="utf-8", errors="ignore") as fout:
+            fout.write(metadata_content)
+        return metadata_path
 
     def get_cover_tex_content(self):
         cover_image = self.get_cover_image().replace("\\", "/")

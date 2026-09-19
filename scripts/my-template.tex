@@ -141,6 +141,11 @@ $if(title)$
 \PrintTitle
 $endif$
 
+$if(before-toc)$
+$before-toc$
+\clearpage
+$endif$
+
 $if(toc)$
 {\hypersetup{linkcolor=black}
 \tableofcontents
