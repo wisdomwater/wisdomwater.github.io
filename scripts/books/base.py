@@ -9,6 +9,7 @@ class BaseBook:
     pagebreak_lua = os.path.join("scripts", "pagebreak.lua")
     mytemplate_tex = os.path.join("scripts", "my-template.tex")
     toc = False
+    file_page_break = True
 
     def __init__(self, name,
     ):
@@ -58,17 +59,25 @@ class BaseBook:
 
     def _get_md_content_from_files(self, files):
         content = ""
-        for file in files:
+        for index, file in enumerate(files):
             with open(file, encoding="utf-8", errors="ignore") as f:
                 file_content = f.read().strip()
             if not file_content:
                 continue
             if content:
                 content += "\n\n"
+            if index < len(files) - 1:
+                file_content = self._inject_header_page_breaks(file_content)
             content += file_content
         content = content.replace("<!-- PAGEBREAK -->", "\n::: pagebreak\n:::\n")
         content = content.strip()
         return content
+
+    def _inject_header_page_breaks(self, content):
+        if not self.file_page_break:
+            return content
+
+        return content + "\n\n::: pagebreak\n:::\n\n" if content else content
 
     def _run_pandoc(self, input_path, output_path, extra_args=None, metadata_file=None, template=None, pdf_engine=None):
         cmd = ["pandoc", str(input_path), "-o", str(output_path)]
