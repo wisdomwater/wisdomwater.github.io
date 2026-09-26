@@ -189,6 +189,12 @@ def the_god_who_sees():
     return TheGodWhoSees()
 
 
+@define_book("the-gospel-of-philip")
+def the_gospel_of_philip():
+    from books.the_gospel_of_philip import TheGospelOfPhilip
+    return TheGospelOfPhilip()
+
+
 @define_book("the-gospel-of-thomas")
 def the_gospel_of_thomas():
     from books.the_gospel_of_thomas import TheGospelOfThomas

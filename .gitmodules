@@ -94,3 +94,6 @@
 [submodule "external/the-gospel-of-truth"]
 	path = external/the-gospel-of-truth
 	url = https://github.com/wisdomwater/the-gospel-of-truth
+[submodule "external/the-gospel-of-philip"]
+	path = external/the-gospel-of-philip
+	url = https://github.com/wisdomwater/the-gospel-of-philip
