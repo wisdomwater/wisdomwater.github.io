@@ -91,3 +91,6 @@
 [submodule "external/the-shepherd-of-hermas"]
 	path = external/the-shepherd-of-hermas
 	url = https://github.com/wisdomwater/the-shepherd-of-hermas
+[submodule "external/the-gospel-of-truth"]
+	path = external/the-gospel-of-truth
+	url = https://github.com/wisdomwater/the-gospel-of-truth

@@ -195,6 +195,12 @@ def the_gospel_of_thomas():
     return TheGospelOfThomas()
 
 
+@define_book("the-gospel-of-truth")
+def the_gospel_of_truth():
+    from books.the_gospel_of_truth import TheGospelOfTruth
+    return TheGospelOfTruth()
+
+
 @define_book("the-greater-mercy")
 def the_greater_mercy():
     from books.the_greater_mercy import TheGreaterMercy

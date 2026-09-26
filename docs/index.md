@@ -28,6 +28,7 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 - [The Everlasting Gospel](the-everlasting-gospel/index.md)
 - [The God Who Sees](the-god-who-sees/index.md)
 - [The Gospel of Thomas](the-gospel-of-thomas/index.md)
+- [The Gospel of Truth](the-gospel-of-truth/index.md)
 - [The Greater Mercy](the-greater-mercy/index.md)
 - [The Interior Castle](the-interior-castle/index.md)
 - [The Life of Moses](the-life-of-moses/index.md)
