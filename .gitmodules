@@ -97,3 +97,6 @@
 [submodule "external/the-gospel-of-philip"]
 	path = external/the-gospel-of-philip
 	url = https://github.com/wisdomwater/the-gospel-of-philip
+[submodule "external/the-gospel-of-mary"]
+	path = external/the-gospel-of-mary
+	url = https://github.com/wisdomwater/the-gospel-of-mary
