@@ -100,3 +100,6 @@
 [submodule "external/the-gospel-of-mary"]
 	path = external/the-gospel-of-mary
 	url = https://github.com/wisdomwater/the-gospel-of-mary
+[submodule "external/katha-upanishad"]
+	path = external/katha-upanishad
+	url = https://github.com/wisdomwater/katha-upanishad

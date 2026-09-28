@@ -105,16 +105,22 @@ def held_to_the_end():
     return HeldToTheEnd()
 
 
-@define_book("mystic-treatises")
-def mystic_treatises():
-    from books.mystic_treatises import MysticTreatises
-    return MysticTreatises()
+@define_book("katha-upanishad")
+def katha_upanishad():
+    from books.katha_upanishad import KathaUpanishad
+    return KathaUpanishad()
 
 
 @define_book("light-unending")
 def light_unending():
     from books.light_unending import LightUnending
     return LightUnending()
+
+
+@define_book("mystic-treatises")
+def mystic_treatises():
+    from books.mystic_treatises import MysticTreatises
+    return MysticTreatises()
 
 
 @define_book("number-go-up")

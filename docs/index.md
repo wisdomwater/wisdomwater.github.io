@@ -15,6 +15,7 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 - [Enoch Retold](enoch-retold/index.md)
 - [God in the Hands of Angry Sinners](god-in-the-hands-of-angry-sinners/index.md)
 - [Held to the End](held-to-the-end/index.md)
+- [Katha Upanishad](katha-upanishad/index.md)
 - [Light Unending](light-unending/index.md)
 - [Mystic Treatises](mystic-treatises/index.md)
 - [On First Principles](on-first-principles/index.md)
