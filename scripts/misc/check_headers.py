@@ -49,6 +49,23 @@ def iter_headers(path: Path):
         i += 1
 
 
+def read_meta_title(path: Path):
+    try:
+        text = path.read_text(encoding='utf-8')
+    except UnicodeDecodeError:
+        text = path.read_text(encoding='latin-1')
+
+    for raw_line in text.splitlines():
+        line = raw_line.strip()
+        if not line.startswith('title:'):
+            continue
+        value = line.split(':', 1)[1].strip()
+        if value and value[0] in {'"', "'"} and value[-1] == value[0]:
+            value = value[1:-1]
+        return value.strip()
+    return None
+
+
 def main():
     if len(sys.argv) != 2:
         print('Usage: python scripts/misc/check_headers.py <book-folder>')
@@ -63,6 +80,12 @@ def main():
 
     seen = {}
     duplicate_ids = {}
+
+    meta_path = root / 'meta.yaml'
+    meta_title = read_meta_title(meta_path) if meta_path.exists() else None
+    if meta_title:
+        meta_slug = slugify(meta_title)
+        seen.setdefault(meta_slug, []).append((str(meta_path), 1, meta_title))
 
     for md_file in sorted(root.rglob('*.md')):
         if 'raw' in md_file.parts:
