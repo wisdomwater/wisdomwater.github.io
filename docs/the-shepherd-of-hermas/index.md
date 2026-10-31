@@ -1,6 +1,6 @@
 # The Shepherd of Hermas
 
-[Order on Amazon](https://www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0HL4R5J85){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-shepherd-of-hermas/releases/download/latest/the-shepherd-of-hermas.pdf){ .md-button }

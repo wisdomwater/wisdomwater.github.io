@@ -1,6 +1,6 @@
 # Enoch Retold
 
-[Order on Amazon](https://www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0HH76RQPN){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/enoch-retold/releases/download/latest/enoch-retold.pdf){ .md-button }

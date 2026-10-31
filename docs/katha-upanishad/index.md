@@ -1,6 +1,6 @@
 # Katha Upanishad
 
-[Order on Amazon](https://www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0HMM1HNKB){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/katha-upanishad/releases/download/latest/katha-upanishad.pdf){ .md-button }

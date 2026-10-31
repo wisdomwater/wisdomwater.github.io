@@ -1,6 +1,6 @@
 # The Gospel of Mary
 
-[Order on Amazon](https://www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0HMM5M7M6){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-gospel-of-mary/releases/download/latest/the-gospel-of-mary.pdf){ .md-button }

@@ -1,6 +1,6 @@
 # The Gospel of Truth
 
-[Order on Amazon](https://www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0HL4WYMSV){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-gospel-of-truth/releases/download/latest/the-gospel-of-truth.pdf){ .md-button }
