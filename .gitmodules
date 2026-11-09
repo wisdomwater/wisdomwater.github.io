@@ -103,3 +103,9 @@
 [submodule "external/katha-upanishad"]
 	path = external/katha-upanishad
 	url = https://github.com/wisdomwater/katha-upanishad
+[submodule "external/the-odes-of-solomon"]
+	path = external/the-odes-of-solomon
+	url = https://github.com/wisdomwater/the-odes-of-solomon
+[submodule "external/the-wisdom-of-the-desert"]
+	path = external/the-wisdom-of-the-desert
+	url = https://github.com/wisdomwater/the-wisdom-of-the-desert

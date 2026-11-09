@@ -249,6 +249,12 @@ def the_mirror_of_simple_souls():
     return TheMirrorOfSimpleSouls()
 
 
+@define_book("the-odes-of-solomon")
+def the_odes_of_solomon():
+    from books.the_odes_of_solomon import TheOdesOfSolomon
+    return TheOdesOfSolomon()
+
+
 @define_book("the-shepherd-of-hermas")
 def the_shepherd_of_hermas():
     from books.the_shepherd_of_hermas import TheShepherdOfHermas
