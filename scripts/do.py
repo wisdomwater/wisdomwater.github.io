@@ -285,6 +285,12 @@ def the_way_of_the_word():
     return TheWayOfTheWord()
 
 
+@define_book("the-wisdom-of-the-desert")
+def the_wisdom_of_the_desert():
+    from books.the_wisdom_of_the_desert import TheWisdomOfTheDesert
+    return TheWisdomOfTheDesert()
+
+
 @define_book("unspoken-sermons")
 def unspoken_sermons():
     from books.unspoken_sermons import UnspokenSermons

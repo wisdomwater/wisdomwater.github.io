@@ -44,4 +44,5 @@ May these texts inspire you to look deeper, elevate your heart toward what is et
 - [The Tibetan Book of the Dead](bardo-thodol/index.md)
 - [The Way of the Pilgrim](the-way-of-the-pilgrim/index.md)
 - [The Way of the Word](the-way-of-the-word/index.md)
+- [The Wisdom of the Desert](the-wisdom-of-the-desert.md)
 - [Unspoken Sermons](unspoken-sermons/index.md)
