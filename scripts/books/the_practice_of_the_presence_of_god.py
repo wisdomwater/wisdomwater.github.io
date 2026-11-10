@@ -1,0 +1,28 @@
+import os
+
+from .base import BaseBook
+
+
+class ThePracticeOfThePresenceOfGod(BaseBook):
+    header_page_break = 1
+    base_dir = os.path.join("external", "the-practice-of-the-presence-of-god")
+    chapters_dir = os.path.join(base_dir, "chapters")
+    file_page_break = True
+
+    def __init__(self):
+        super().__init__("the-practice-of-the-presence-of-god")
+
+    def get_chapters(self, format):
+        files = [
+            os.path.join(self.base_dir, "preface.md"),
+        ]
+        files.extend(self._get_chapters())
+        files.append(os.path.join(self.base_dir, "epilogue.md"))
+        return files
+
+    def _get_chapters(self):
+        for file in sorted(os.listdir(self.chapters_dir)):
+            if not file.endswith(".md"):
+                continue
+            filepath = os.path.join(self.chapters_dir, file)
+            yield filepath

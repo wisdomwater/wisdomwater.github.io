@@ -109,3 +109,6 @@
 [submodule "external/the-wisdom-of-the-desert"]
 	path = external/the-wisdom-of-the-desert
 	url = https://github.com/wisdomwater/the-wisdom-of-the-desert
+[submodule "external/the-practice-of-the-presence-of-god"]
+	path = external/the-practice-of-the-presence-of-god
+	url = https://github.com/wisdomwater/the-practice-of-the-presence-of-god

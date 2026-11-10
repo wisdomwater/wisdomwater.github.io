@@ -255,6 +255,12 @@ def the_odes_of_solomon():
     return TheOdesOfSolomon()
 
 
+@define_book("the-practice-of-the-presence-of-god")
+def the_practice_of_the_presence_of_god():
+    from books.the_practice_of_the_presence_of_god import ThePracticeOfThePresenceOfGod
+    return ThePracticeOfThePresenceOfGod()
+
+
 @define_book("the-shepherd-of-hermas")
 def the_shepherd_of_hermas():
     from books.the_shepherd_of_hermas import TheShepherdOfHermas
