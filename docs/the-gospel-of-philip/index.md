@@ -1,6 +1,6 @@
 # The Gospel of Philip
 
-[Order on Amazon](https://www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0HPZ2HWPV){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-gospel-of-philip/releases/download/latest/the-gospel-of-philip.pdf){ .md-button }

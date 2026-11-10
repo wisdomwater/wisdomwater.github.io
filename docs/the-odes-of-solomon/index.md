@@ -1,6 +1,6 @@
 # The Odes of Solomon
 
-[Order on Amazon](https://www.amazon.com){ .md-button }
+[Order on Amazon](https://www.amazon.com/dp/B0HR31165B){ .md-button }
 
 <!--
 [Download PDF](https://github.com/wisdomwater/the-odes-of-solomon/releases/download/latest/the-odes-of-solomon.pdf){ .md-button }
